@@ -7,7 +7,7 @@ import kmgLogo from "@/assets/clients/kmg-logo.png";
 const MAPS_URL = "https://maps.app.goo.gl/aChkWngdQGw49bRq9";
 
 const reviews = [
-  { name: "Kaleab Solomon", role: "Owner, Afro Tattoo Studio", logo: afroTattooLogo, text: "As the owner of Afro Tattoo Studio in Addis Ababa, I cannot highly recommend Kibreab and the United Tech team enough. They built a top-notch, visually stunning website for us with incredible SEO performance. It has easily been the best investment I have ever made for my business. Kibreab and his team are honest, hardworking professionals who deliver exceptional results. If you need a website that drives real growth, they are the team to trust!" },
+  { name: "Kaleab Solomon", role: "Owner, Afro Tattoo Studio", logo: afroTattooLogo, text: "As the owner of Afro Tattoo Studio in Addis Ababa, I cannot highly recommend Kibreab and the United Tech team enough. They built a top-notch, visually stunning website for us with incredible SEO performance." },
   { name: "HoneyBadger Ethiopia", role: "HoneyBadger Courses", logo: honeyBadgerLogo, text: "United Tech built our course selling platform. They are very professional and skilled. I definitely recommend them. They are the best software company in Ethiopia!" },
   { name: "KMG Smart Maintenance", role: "Owner, KMG Electrical & Sanitary Group", logo: kmgLogo, text: "United Tech built a quality website for us — definitely recommend it. One of the best software companies in Addis Ababa, Ethiopia." },
 ];
