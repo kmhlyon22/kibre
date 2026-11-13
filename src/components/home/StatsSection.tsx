@@ -1,7 +1,5 @@
 const stats = [
-  { value: "7", label: "Projects Completed" },
-  { value: "6", label: "Websites Delivered" },
-  { value: "1", label: "Mobile App Built" },
+  { value: "20+", label: "Projects Completed" },
   { value: "100%", label: "Client Satisfaction" },
 ];
 
@@ -83,7 +81,7 @@ export function StatsSection() {
       <FloatingTechIllustration />
       
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 gap-8 max-w-2xl mx-auto">
           {stats.map((stat, index) => (
             <div 
               key={stat.label} 
