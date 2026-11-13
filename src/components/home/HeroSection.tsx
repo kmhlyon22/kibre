@@ -68,7 +68,7 @@ export function HeroSection() {
                         <img
                             src={dashboardVisual}
                             alt="Dashboard visualization showing analytics and data management"
-                            className="relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-xl mx-auto mix-blend-multiply"
+                            className="relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-xl mx-auto rounded-2xl shadow-elevated ring-1 ring-primary/20"
                         />
                     </div>
                 </div>
