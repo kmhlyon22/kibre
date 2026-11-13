@@ -1,3 +1,4 @@
+import { SectionEyebrow } from "@/components/ui/section-eyebrow";
 import { Headphones, PenTool, Code, LifeBuoy } from "lucide-react";
 import { FloatingTechElements } from "@/components/ui/floating-tech-elements";
 import workflowIllustration from "@/assets/illustrations/workflow-isometric.png";
@@ -51,7 +52,8 @@ export function ProcessSection() {
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4">
+          <SectionEyebrow>How We Work</SectionEyebrow>
+          <h2 className="text-3xl md:text-5xl font-bold text-navy mb-4">
             How We Work
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">

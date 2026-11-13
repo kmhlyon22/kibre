@@ -1,3 +1,4 @@
+import { SectionEyebrow } from "@/components/ui/section-eyebrow";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Database, Globe, Smartphone, ArrowRight } from "lucide-react";
@@ -30,7 +31,8 @@ export function ServicesPreview() {
       <div className="container mx-auto px-4 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4">
+          <SectionEyebrow>Our Solutions</SectionEyebrow>
+          <h2 className="text-3xl md:text-5xl font-bold text-navy mb-4">
             What We Build
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">

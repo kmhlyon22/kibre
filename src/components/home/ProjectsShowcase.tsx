@@ -1,3 +1,4 @@
+import { SectionEyebrow } from "@/components/ui/section-eyebrow";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, X } from "lucide-react";
@@ -106,7 +107,8 @@ export function ProjectsShowcase() {
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-navy mb-3">
+            <SectionEyebrow>Recent Works</SectionEyebrow>
+            <h2 className="text-3xl md:text-5xl font-bold text-navy mb-3">
               Our Past Projects
             </h2>
             <p className="text-muted-foreground max-w-xl">

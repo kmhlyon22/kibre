@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
-import heroPattern from "@/assets/hero-pattern.png";
 import dashboardVisual from "@/assets/dashboard-visual.png";
 import { FloatingTechElements } from "@/components/ui/floating-tech-elements";
 
@@ -9,19 +8,8 @@ const heroList = ["ERP Systems", "Website Development", "Mobile Apps"];
 
 export function HeroSection() {
     return (
-        <section className="relative overflow-hidden">
+        <section className="relative overflow-hidden bg-hero pb-16 lg:pb-24">
             {/* Background Pattern */}
-            <div
-                className="absolute inset-0 opacity-30"
-                style={{
-                    backgroundImage: `url(${heroPattern})`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                }}
-            />
-
-            {/* Gradient Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
 
             {/* Floating Tech Elements */}
             <FloatingTechElements

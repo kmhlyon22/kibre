@@ -131,8 +131,12 @@
     text-wrap: balance;
   }
   
+  /* Wavy light-sky banner with a soft white blob on the right */
   .bg-hero {
-    background: var(--gradient-hero);
+    background-color: hsl(var(--background));
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 900' preserveAspectRatio='none'%3E%3Cpath d='M0 0H1440V640C1180 760 980 820 720 830C430 840 200 790 0 720Z' fill='%23d9f6fd'/%3E%3Cpath d='M800 0C730 120 860 260 820 430C780 600 830 780 980 790C1180 800 1320 700 1440 640V0Z' fill='%23ffffff'/%3E%3C/svg%3E");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
   }
   
   .bg-gradient-primary {

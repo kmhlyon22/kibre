@@ -132,7 +132,7 @@ export default function Services() {
                 </div>
 
                 {/* Title & Description */}
-                <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4">
+                <h2 className="text-3xl md:text-5xl font-bold text-navy mb-4">
                   {service.title}
                 </h2>
                 <p className="text-lg text-muted-foreground mb-8">
@@ -222,7 +222,7 @@ export default function Services() {
         
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="max-w-3xl mx-auto text-center opacity-0 animate-fade-in">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
+            <h2 className="text-3xl md:text-5xl font-bold text-primary-foreground mb-4">
               Not Sure Which Service You Need?
             </h2>
             <p className="text-lg text-primary-foreground/70 mb-8">
