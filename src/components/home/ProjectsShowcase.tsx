@@ -14,6 +14,12 @@ import amenThumb from "@/assets/projects/amen-thumb-new.jpg";
 import sfkThumb from "@/assets/projects/sfk-thumb.jpg";
 import honeybadgerThumb from "@/assets/projects/honeybadger-thumb-new.jpg";
 import fiandimoThumb from "@/assets/projects/fiandimo-thumb.png";
+import schoolThumb from "@/assets/projects/school-thumb.jpg";
+import gymThumb from "@/assets/projects/gym-thumb.jpg";
+import medicalThumb from "@/assets/projects/medical-thumb.jpg";
+import afrotattooThumb from "@/assets/projects/afrotattoo-thumb.jpg";
+import kmgThumb from "@/assets/projects/kmg-thumb.jpg";
+import gospelThumb from "@/assets/projects/gospel-thumb.jpg";
 
 // Project data with screenrecordings
 const projects = [
@@ -74,7 +80,13 @@ const projects = [
     thumbnail: fiandimoThumb,
     screenrecording: "/recordings/fiandimo.mp4",
   },
-];
+  { id: 9, title: "HB School Management System", category: "SaaS", thumbnail: schoolThumb, link: "https://project-qi8ab.vercel.app/", inProgress: true },
+  { id: 10, title: "HB Gym Management System", category: "SaaS", thumbnail: gymThumb, link: "https://swift-gym-sync.lovable.app/", inProgress: true },
+  { id: 11, title: "United Secured Medical Transport", category: "Website", thumbnail: medicalThumb, link: "https://united-website-teal.vercel.app/" },
+  { id: 12, title: "Afro Tattoo Studio", category: "Website", thumbnail: afrotattooThumb, link: "https://afrotattoo.com/" },
+  { id: 13, title: "KMG Engineering", category: "Website", thumbnail: kmgThumb, link: "https://kmgelectricalandsanitary.com/" },
+  { id: 14, title: "Gospel Light Missionary Company", category: "Website", thumbnail: gospelThumb, link: "https://gospel-light-website-main.vercel.app/" },
+] as { id: number; title: string; category: string; thumbnail: string; screenrecording?: string; link?: string; inProgress?: boolean }[];
 
 export function ProjectsShowcase() {
   const [selectedProject, setSelectedProject] = useState<typeof projects[0] | null>(null);
@@ -91,18 +103,6 @@ export function ProjectsShowcase() {
 
   return (
     <section className="py-20 lg:py-28 bg-background relative overflow-hidden">
-      {/* Animated Background */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-sky-300/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1s" }} />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-br from-primary/5 to-sky-200/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "2s" }} />
-        
-        {/* Floating shapes */}
-        <div className="absolute top-1/4 right-1/4 w-4 h-4 bg-primary/20 rounded-full animate-bounce" style={{ animationDuration: "3s" }} />
-        <div className="absolute bottom-1/3 left-1/5 w-3 h-3 bg-sky-400/30 rounded-full animate-bounce" style={{ animationDuration: "4s", animationDelay: "0.5s" }} />
-        <div className="absolute top-2/3 right-1/3 w-5 h-5 bg-primary/15 rounded-full animate-bounce" style={{ animationDuration: "3.5s", animationDelay: "1s" }} />
-      </div>
-
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
@@ -172,6 +172,15 @@ export function ProjectsShowcase() {
                   >
                     Click to view screenrecording →
                   </button>
+                ) : project.link ? (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary text-sm inline-block group-hover:underline transition-all duration-300 hover:translate-x-1"
+                  >
+                    Visit live site →
+                  </a>
                 ) : (
                   <span className="text-white/50 text-sm inline-block">
                     Screenrecording coming soon
