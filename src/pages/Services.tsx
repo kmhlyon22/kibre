@@ -82,7 +82,7 @@ export default function Services() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="bg-hero py-20 lg:py-28 overflow-hidden relative">
+      <section className="bg-hero pt-20 pb-32 lg:pt-28 lg:pb-44 overflow-hidden relative">
         {/* Floating Tech Elements - visible on all screens */}
         <FloatingTechElements className="opacity-50 lg:opacity-100" />
         
