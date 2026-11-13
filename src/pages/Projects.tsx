@@ -1,7 +1,7 @@
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { ArrowRight, Globe, Smartphone } from "lucide-react";
+import { ArrowRight, Globe, Smartphone, ExternalLink } from "lucide-react";
 import projectsHeroImage from "@/assets/illustrations/projects-hero.png";
 import { TechNetworkBackground } from "@/components/ui/tech-network-background";
 import { FloatingTechElements } from "@/components/ui/floating-tech-elements";
@@ -13,6 +13,12 @@ import yonasThumb from "@/assets/projects/yonas-thumb.jpg";
 import amenThumb from "@/assets/projects/amen-thumb.png";
 import sfkThumb from "@/assets/projects/sfk-thumb.jpg";
 import honeybadgerThumb from "@/assets/projects/honeybadger-thumb.jpg";
+import schoolThumb from "@/assets/projects/school-thumb.jpg";
+import gymThumb from "@/assets/projects/gym-thumb.jpg";
+import medicalThumb from "@/assets/projects/medical-thumb.jpg";
+import afrotattooThumb from "@/assets/projects/afrotattoo-thumb.jpg";
+import kmgThumb from "@/assets/projects/kmg-thumb.jpg";
+import gospelThumb from "@/assets/projects/gospel-thumb.jpg";
 
 const projects = [
   {
@@ -44,6 +50,7 @@ const projects = [
     problem: "Needed to establish credibility and showcase their portfolio to attract major contracts",
     solution: "Created a professional corporate site highlighting their Grade 1 status, project gallery, and capabilities",
     image: uconThumb,
+    link: "https://unitedconstruction.company/",
   },
   {
     id: 4,
@@ -54,6 +61,7 @@ const projects = [
     problem: "Wanted to attract more customers and establish their reputation as a premier dining destination",
     solution: "Built an appetizing website with menu showcase, location info, and cultural storytelling",
     image: yonasThumb,
+    link: "https://yonaschercher.et/",
   },
   {
     id: 5,
@@ -85,7 +93,32 @@ const projects = [
     solution: "Building a feature-rich app with course browsing, purchases, and in-app learning experience",
     image: honeybadgerThumb,
     inProgress: true,
+    link: "https://honeybadger.et/",
   },
+  { id: 8, title: "HB School Management System", type: "app", category: "SaaS", link: "https://project-qi8ab.vercel.app/", image: schoolThumb, inProgress: true,
+    description: "School management platform for students, classes, attendance and academic records.",
+    problem: "Schools needed one place to run daily operations instead of paper and spreadsheets",
+    solution: "Building a role-based system for administrators and teachers with attendance, marks and fees" },
+  { id: 9, title: "HB Gym Management System", type: "app", category: "SaaS", link: "https://swift-gym-sync.lovable.app/", image: gymThumb, inProgress: true,
+    description: "Gym management platform for members, memberships, subscriptions, payments and attendance.",
+    problem: "Gyms struggled to track memberships, renewals and payments manually",
+    solution: "Building a dashboard that automates subscriptions, check-ins and payment tracking" },
+  { id: 10, title: "United Secured Medical Transport", type: "website", category: "Healthcare", link: "https://united-website-teal.vercel.app/", image: medicalThumb,
+    description: "Professional website for a medical transportation company.",
+    problem: "Needed a trustworthy online presence to reach patients and healthcare partners",
+    solution: "Designed a clean, credible site presenting services, coverage and easy contact" },
+  { id: 11, title: "Afro Tattoo Studio", type: "website", category: "Creative", link: "https://afrotattoo.com/", image: afrotattooThumb,
+    description: "Modern website for a tattoo studio showcasing artwork, services and the brand.",
+    problem: "Needed a stylish way to show off artwork and turn visitors into bookings",
+    solution: "Built a dark, artistic site with a gallery, testimonials and WhatsApp booking" },
+  { id: 12, title: "KMG Engineering", type: "website", category: "Engineering", link: "https://kmgelectricalandsanitary.com/", image: kmgThumb,
+    description: "Professional digital presence for an electrical and sanitary engineering company.",
+    problem: "Needed to present capabilities and past work to win new contracts",
+    solution: "Created a corporate site highlighting services, projects and contact channels" },
+  { id: 13, title: "Gospel Light Missionary Company", type: "website", category: "Organization", link: "https://gospel-light-website-main.vercel.app/", image: gospelThumb,
+    description: "Professional online presence for a missionary organization.",
+    problem: "Needed a welcoming place online to share their mission and connect with supporters",
+    solution: "Designed a warm, clear site presenting their mission, activities and ways to get involved" },
 ];
 
 export default function Projects() {
@@ -106,7 +139,7 @@ export default function Projects() {
                 Our Projects
               </h1>
               <p className="text-lg text-muted-foreground mb-8">
-                {projects.length} completed projects for real clients. Each one solved a specific 
+                {projects.length} projects for real clients. Each one solved a specific 
                 business problem with a custom solution.
               </p>
               <div className="flex justify-center lg:justify-start gap-6">
@@ -116,7 +149,7 @@ export default function Projects() {
                 </div>
                 <div className="flex items-center gap-2 text-muted-foreground">
                   <Smartphone className="w-5 h-5 text-primary" />
-                  <span className="font-medium">{appCount} Mobile App</span>
+                  <span className="font-medium">{appCount} Apps &amp; Platforms</span>
                 </div>
               </div>
             </div>
@@ -187,6 +220,11 @@ export default function Projects() {
                       <span className="text-muted-foreground">{project.solution}</span>
                     </div>
                   </div>
+                  {project.link && (
+                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="relative z-10 inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline">
+                      Visit live site <ExternalLink className="w-4 h-4" />
+                    </a>
+                  )}
                 </div>
               </div>
             ))}
