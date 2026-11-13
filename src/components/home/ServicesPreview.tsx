@@ -2,7 +2,6 @@ import { SectionEyebrow } from "@/components/ui/section-eyebrow";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Database, Globe, Smartphone, ArrowRight } from "lucide-react";
-import { TechNetworkBackground } from "@/components/ui/tech-network-background";
 
 const services = [
   {
@@ -49,7 +48,6 @@ export function ServicesPreview() {
               style={{ animationDelay: `${index * 0.15}s` }}
             >
               {/* Tech Network Background */}
-              <TechNetworkBackground variant="compact" />
               
               {/* Icon */}
               <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300 relative z-10">

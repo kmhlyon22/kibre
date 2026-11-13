@@ -1,6 +1,5 @@
 import { SectionEyebrow } from "@/components/ui/section-eyebrow";
 import { Building2, ShoppingBag, Utensils, Building, Factory, Truck, GraduationCap, HeartPulse } from "lucide-react";
-import { TechNetworkBackground } from "@/components/ui/tech-network-background";
 
 const industries = [
   {
@@ -53,7 +52,6 @@ export function IndustriesSection() {
       
       {/* Tech network background */}
       <div className="absolute inset-0 opacity-20">
-        <TechNetworkBackground variant="wide" />
       </div>
       
       {/* Animated floating gradient orbs - Primary blue */}

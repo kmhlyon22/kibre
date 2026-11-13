@@ -15,9 +15,8 @@ import {
   Sparkles
 } from "lucide-react";
 import aboutHeroImage from "@/assets/illustrations/about-hero.png";
-import processIllustration from "@/assets/illustrations/process-isometric.png";
+import processIllustration from "@/assets/illustrations/process-team.png";
 import { FloatingTechElements } from "@/components/ui/floating-tech-elements";
-import { TechNetworkBackground } from "@/components/ui/tech-network-background";
 import { useState, useRef } from "react";
 
 const values = [
@@ -151,7 +150,6 @@ export default function About() {
               </div>
               <div className="bg-card rounded-2xl p-8 border border-border/50 card-hover opacity-0 animate-slide-up stagger-2 relative overflow-hidden">
                 {/* Tech Network Background */}
-                <TechNetworkBackground variant="default" />
                 
                 <h3 className="text-lg font-semibold text-navy mb-6 relative z-10">
                   What Makes Us Different
@@ -190,7 +188,6 @@ export default function About() {
                 className={`text-center card-hover p-6 rounded-2xl opacity-0 animate-slide-up stagger-${index + 1} bg-card border border-border/50 relative overflow-hidden`}
               >
                 {/* Tech Network Background */}
-                <TechNetworkBackground variant="compact" />
                 
                 <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors icon-hover relative z-10">
                   <value.icon className="w-7 h-7 text-primary" />

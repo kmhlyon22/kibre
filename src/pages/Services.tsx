@@ -16,7 +16,6 @@ import {
 } from "lucide-react";
 import servicesHeroImage from "@/assets/illustrations/services-hero.png";
 import { FloatingTechElements } from "@/components/ui/floating-tech-elements";
-import { TechNetworkBackground } from "@/components/ui/tech-network-background";
 
 const services = [
   {
@@ -169,7 +168,6 @@ export default function Services() {
               <div className={`${index % 2 === 1 ? 'lg:order-1' : ''} opacity-0 animate-slide-up stagger-2`}>
                 <div className="bg-card rounded-2xl p-8 border border-border/50 shadow-card card-hover relative overflow-hidden">
                   {/* Tech Network Background */}
-                  <TechNetworkBackground variant="default" />
                   
                   <h3 className="text-lg font-semibold text-navy mb-6 relative z-10">
                     What You Get
