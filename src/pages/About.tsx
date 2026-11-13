@@ -268,24 +268,18 @@ export default function About() {
               <div 
                 className="relative group"
                 style={{
-                  transform: `translate(${mousePosition.x}px, ${mousePosition.y}px)`,
+                  
                   transition: 'transform 0.3s ease-out'
                 }}
               >
-                {/* Pulsing glow effect - smaller on mobile */}
-                <div className="absolute -inset-6 lg:-inset-12 bg-gradient-to-r from-primary/20 via-sky-light/25 to-primary/20 rounded-3xl blur-2xl lg:blur-3xl animate-pulse-slow" />
-                <div className="absolute -inset-4 lg:-inset-8 bg-gradient-to-r from-primary/15 to-sky-light/15 rounded-3xl blur-xl lg:blur-2xl opacity-60 group-hover:opacity-100 transition-opacity duration-500" />
                 
                 {/* Illustration with white fade edges */}
                 <div className="relative">
                   <img 
                     src={processIllustration} 
                     alt="Structured engineering process illustration showing connected systems" 
-                    className="relative max-w-xs sm:max-w-sm lg:max-w-lg w-full rounded-xl shadow-2xl transform transition-all duration-500 group-hover:scale-[1.02] animate-float-slow"
+                    className="relative max-w-xs sm:max-w-sm lg:max-w-lg w-full transition-transform duration-500 group-hover:scale-[1.02]"
                   />
-                  {/* White fade overlay on edges */}
-                  <div className="absolute inset-0 pointer-events-none rounded-xl bg-gradient-to-t from-white via-transparent to-white/50" />
-                  <div className="absolute inset-0 pointer-events-none rounded-xl bg-gradient-to-r from-white/60 via-transparent to-white/60" />
                 </div>
               </div>
             </div>
