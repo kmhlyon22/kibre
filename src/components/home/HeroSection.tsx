@@ -4,7 +4,6 @@ import { ArrowRight, CheckCircle2 } from "lucide-react";
 import dashboardVisual from "@/assets/dashboard-visual.png";
 import { FloatingTechElements } from "@/components/ui/floating-tech-elements";
 
-const heroList = ["ERP Systems", "Website Development", "Mobile Apps"];
 
 export function HeroSection() {
     return (
@@ -32,26 +31,12 @@ export function HeroSection() {
                         {/* Main Headline */}
                         <h1 className="text-5xl md:text-6xl font-bold text-navy leading-tight mb-4">
                             United Tech{" "}
-                            <span className="text-green-600">Ethiopia</span>
+                            <span style={{ color: "#8B5A2B" }}>Ethiopia</span>
                         </h1>
 
-                        {/* ERP / Website / Apps List as H1 */}
-                        <div className="flex flex-col gap-3 mb-4">
-                            {heroList.map((item) => (
-                                <h1
-                                    key={item}
-                                    className="flex items-center gap-3 text-black text-4xl md:text-5xl font-bold"
-                                >
-                                    <CheckCircle2 className="w-6 h-6 text-black" />
-                                    {item}
-                                </h1>
-                            ))}
-                        </div>
-
-                        {/* For Growing Businesses */}
-                        <h1 className="text-4xl md:text-5xl font-bold text-[#0d96da] mb-4">
-                            for Growing Businesses
-                        </h1>
+                        <h2 className="text-2xl md:text-4xl font-bold text-navy leading-snug mb-6">
+                            The best <span className="text-primary">website, mobile app and ERP system</span> developers in Addis Ababa, Ethiopia.
+                        </h2>
 
                         {/* Subheadline */}
                         <p className="text-base md:text-lg text-muted-foreground max-w-xl mx-auto lg:mx-0 mb-8">
