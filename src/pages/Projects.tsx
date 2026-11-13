@@ -160,7 +160,7 @@ export default function Projects() {
                 <img 
                   src={projectsHeroImage} 
                   alt="Projects illustration" 
-                  className="relative w-full max-w-xs sm:max-w-sm lg:max-w-lg animate-float-subtle transition-transform duration-500 group-hover:scale-105"
+                  className="relative w-full max-w-xs sm:max-w-sm lg:max-w-lg animate-float-subtle mix-blend-multiply transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
             </div>
