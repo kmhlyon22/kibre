@@ -17,7 +17,6 @@ import {
 import { z } from "zod";
 import contactHeroImage from "@/assets/illustrations/contact-hero.png";
 import { FloatingTechElements } from "@/components/ui/floating-tech-elements";
-import { TechNetworkBackground } from "@/components/ui/tech-network-background";
 
 const contactSchema = z.object({
   name: z.string().trim().min(1, "Name is required").max(100, "Name must be less than 100 characters"),
@@ -142,7 +141,6 @@ export default function Contact() {
               <div className="lg:col-span-3 opacity-0 animate-slide-up">
                 <div className="bg-card rounded-2xl p-8 border border-border/50 shadow-card card-hover relative overflow-hidden">
                   {/* Tech Network Background */}
-                  <TechNetworkBackground variant="wide" />
                   
                   {isSubmitted ? (
                     <div className="text-center py-12 relative z-10">

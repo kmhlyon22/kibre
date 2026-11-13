@@ -8,6 +8,11 @@ import sunnySideHotel from "@/assets/clients/sunny-side-hotel-logo.png";
 import churrosLogo from "@/assets/clients/churros-logo-new.png";
 import honeyBadgerLogo from "@/assets/clients/honey-badger-logo-new.png";
 import fiandimoLogo from "@/assets/clients/fiandimo-logo.png";
+import mtmLogo from "@/assets/clients/mtm-logo.png";
+import afroTattooLogo from "@/assets/clients/afro-tattoo-logo.png";
+import afroEagleLogo from "@/assets/clients/afro-eagle-logo.png";
+import mekelleLogo from "@/assets/clients/mekelle-security-logo.png";
+import kmgLogo from "@/assets/clients/kmg-logo.png";
 
 const clients = [
   { id: 1, name: "UCON", logo: uconLogo },
@@ -16,6 +21,11 @@ const clients = [
   { id: 4, name: "Mr. & Mrs. Churros", logo: churrosLogo },
   { id: 5, name: "Honey Badger Courses", logo: honeyBadgerLogo },
   { id: 6, name: "Fiandimo Trading", logo: fiandimoLogo },
+  { id: 7, name: "MTM Muay Thai Club", logo: mtmLogo },
+  { id: 8, name: "Afro Tattoo Studio", logo: afroTattooLogo },
+  { id: 9, name: "Afro Eagle Electro-Mechanical", logo: afroEagleLogo },
+  { id: 10, name: "Mekelle City Security", logo: mekelleLogo },
+  { id: 11, name: "KMG Engineering", logo: kmgLogo },
 ];
 
 export function ClientsSection() {
@@ -42,7 +52,7 @@ export function ClientsSection() {
         </div>
 
         {/* Desktop: Show all logos in a row */}
-        <div className="hidden md:flex justify-center items-center gap-12 lg:gap-16">
+        <div className="hidden md:flex flex-wrap justify-center items-center gap-x-8 gap-y-6 lg:gap-x-10">
           {clients.map((client, index) => (
             <div
               key={client.id}
@@ -52,7 +62,7 @@ export function ClientsSection() {
               <img
                 src={client.logo}
                 alt={client.name}
-                className="h-32 lg:h-40 w-auto object-contain transition-all duration-300 group-hover:drop-shadow-lg"
+                className="h-14 lg:h-16 max-w-[120px] w-auto object-contain transition-all duration-300 group-hover:drop-shadow-lg"
               />
             </div>
           ))}
@@ -72,7 +82,7 @@ export function ClientsSection() {
                 <img
                   src={client.logo}
                   alt={client.name}
-                  className="h-36 w-auto object-contain"
+                  className="h-24 max-w-[200px] w-auto object-contain"
                 />
               </div>
             ))}

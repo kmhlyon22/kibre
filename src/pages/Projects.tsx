@@ -3,127 +3,14 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight, Globe, Smartphone, ExternalLink } from "lucide-react";
 import projectsHeroImage from "@/assets/illustrations/projects-hero.png";
-import { TechNetworkBackground } from "@/components/ui/tech-network-background";
 import { FloatingTechElements } from "@/components/ui/floating-tech-elements";
 // Import project thumbnails
-import churrosThumb from "@/assets/projects/churros-thumb.png";
-import sunnyThumb from "@/assets/projects/sunny-thumb.png";
-import uconThumb from "@/assets/projects/ucon-thumb.png";
-import yonasThumb from "@/assets/projects/yonas-thumb.jpg";
-import amenThumb from "@/assets/projects/amen-thumb.png";
-import sfkThumb from "@/assets/projects/sfk-thumb.jpg";
-import honeybadgerThumb from "@/assets/projects/honeybadger-thumb.jpg";
-import schoolThumb from "@/assets/projects/school-thumb.jpg";
-import gymThumb from "@/assets/projects/gym-thumb.jpg";
-import medicalThumb from "@/assets/projects/medical-thumb.jpg";
-import afrotattooThumb from "@/assets/projects/afrotattoo-thumb.jpg";
-import kmgThumb from "@/assets/projects/kmg-thumb.jpg";
-import gospelThumb from "@/assets/projects/gospel-thumb.jpg";
-
-const projects = [
-  {
-    id: 1,
-    title: "Mr. & Mrs. Churros",
-    type: "website",
-    category: "E-Commerce",
-    description: "Premium e-commerce platform with stunning visual design for Ethiopia's beloved pastry brand.",
-    problem: "Needed an online presence that matched their premium brand identity and enabled seamless online ordering",
-    solution: "Built a visually striking website with custom graphics, smooth animations, and integrated ordering system",
-    image: churrosThumb,
-  },
-  {
-    id: 2,
-    title: "Sunny Side Hotel",
-    type: "website",
-    category: "Hospitality",
-    description: "Elegant hotel booking platform with seamless reservation system and immersive guest experience.",
-    problem: "Required a modern booking system to handle reservations and showcase their property effectively",
-    solution: "Developed a sophisticated booking platform with room availability, date selection, and location integration",
-    image: sunnyThumb,
-  },
-  {
-    id: 3,
-    title: "United Construction",
-    type: "website",
-    category: "Corporate",
-    description: "Professional corporate website for Ethiopia's leading Grade 1 construction company.",
-    problem: "Needed to establish credibility and showcase their portfolio to attract major contracts",
-    solution: "Created a professional corporate site highlighting their Grade 1 status, project gallery, and capabilities",
-    image: uconThumb,
-    link: "https://unitedconstruction.company/",
-  },
-  {
-    id: 4,
-    title: "Yonas Chercher",
-    type: "website",
-    category: "Restaurant",
-    description: "Authentic digital presence for Ethiopia's renowned traditional restaurant specializing in kitfo and raw meat.",
-    problem: "Wanted to attract more customers and establish their reputation as a premier dining destination",
-    solution: "Built an appetizing website with menu showcase, location info, and cultural storytelling",
-    image: yonasThumb,
-    link: "https://yonaschercher.et/",
-  },
-  {
-    id: 5,
-    title: "Amen Car Dealership",
-    type: "website",
-    category: "Automotive",
-    description: "Modern car showroom platform with intuitive vehicle browsing and inquiry system.",
-    problem: "Needed a professional platform to display inventory and generate quality leads",
-    solution: "Developed a sleek showroom website with vehicle listings, specifications, and easy inquiry forms",
-    image: amenThumb,
-  },
-  {
-    id: 6,
-    title: "SFK Sports Group",
-    type: "website",
-    category: "Sports",
-    description: "Football talent registration platform built for a UK-based sports recruitment company.",
-    problem: "Required a streamlined system to discover and register football talent from Ethiopia",
-    solution: "Created a registration platform with player profiles, trial scheduling, and recruitment pipeline",
-    image: sfkThumb,
-  },
-  {
-    id: 7,
-    title: "Honey Badger Courses",
-    type: "app",
-    category: "Mobile App",
-    description: "Course marketplace app with seamless learning experience — currently in development by our team.",
-    problem: "Needed a mobile-first platform for course creators to sell and deliver educational content",
-    solution: "Building a feature-rich app with course browsing, purchases, and in-app learning experience",
-    image: honeybadgerThumb,
-    inProgress: true,
-    link: "https://honeybadger.et/",
-  },
-  { id: 8, title: "HB School Management System", type: "app", category: "SaaS", link: "https://project-qi8ab.vercel.app/", image: schoolThumb, inProgress: true,
-    description: "School management platform for students, classes, attendance and academic records.",
-    problem: "Schools needed one place to run daily operations instead of paper and spreadsheets",
-    solution: "Building a role-based system for administrators and teachers with attendance, marks and fees" },
-  { id: 9, title: "HB Gym Management System", type: "app", category: "SaaS", link: "https://swift-gym-sync.lovable.app/", image: gymThumb, inProgress: true,
-    description: "Gym management platform for members, memberships, subscriptions, payments and attendance.",
-    problem: "Gyms struggled to track memberships, renewals and payments manually",
-    solution: "Building a dashboard that automates subscriptions, check-ins and payment tracking" },
-  { id: 10, title: "United Secured Medical Transport", type: "website", category: "Healthcare", link: "https://united-website-teal.vercel.app/", image: medicalThumb,
-    description: "Professional website for a medical transportation company.",
-    problem: "Needed a trustworthy online presence to reach patients and healthcare partners",
-    solution: "Designed a clean, credible site presenting services, coverage and easy contact" },
-  { id: 11, title: "Afro Tattoo Studio", type: "website", category: "Creative", link: "https://afrotattoo.com/", image: afrotattooThumb,
-    description: "Modern website for a tattoo studio showcasing artwork, services and the brand.",
-    problem: "Needed a stylish way to show off artwork and turn visitors into bookings",
-    solution: "Built a dark, artistic site with a gallery, testimonials and WhatsApp booking" },
-  { id: 12, title: "KMG Engineering", type: "website", category: "Engineering", link: "https://kmgelectricalandsanitary.com/", image: kmgThumb,
-    description: "Professional digital presence for an electrical and sanitary engineering company.",
-    problem: "Needed to present capabilities and past work to win new contracts",
-    solution: "Created a corporate site highlighting services, projects and contact channels" },
-  { id: 13, title: "Gospel Light Missionary Company", type: "website", category: "Organization", link: "https://gospel-light-website-main.vercel.app/", image: gospelThumb,
-    description: "Professional online presence for a missionary organization.",
-    problem: "Needed a welcoming place online to share their mission and connect with supporters",
-    solution: "Designed a warm, clear site presenting their mission, activities and ways to get involved" },
-];
+import { projects } from "@/data/projects";
 
 export default function Projects() {
-  const websiteCount = projects.filter(p => p.type === "website").length;
-  const appCount = projects.filter(p => p.type === "app").length;
+  const isApp = (c: string) => /SaaS|ERP|Platform/i.test(c);
+  const websiteCount = projects.filter(p => !isApp(p.category)).length;
+  const appCount = projects.filter(p => isApp(p.category)).length;
 
   return (
     <Layout>
@@ -181,7 +68,7 @@ export default function Projects() {
                 {/* Image */}
                 <div className="aspect-video bg-secondary relative overflow-hidden">
                   <img 
-                    src={project.image} 
+                    src={project.thumbnail} 
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
@@ -189,18 +76,12 @@ export default function Projects() {
                     <span className="px-3 py-1 bg-primary/90 text-primary-foreground text-xs font-medium rounded-full">
                       {project.category}
                     </span>
-                    {project.inProgress && (
-                      <span className="px-3 py-1 bg-amber-500/90 text-white text-xs font-medium rounded-full">
-                        In Progress
-                      </span>
-                    )}
                   </div>
                 </div>
 
                 {/* Content */}
                 <div className="p-6 relative">
                   {/* Tech Network Background */}
-                  <TechNetworkBackground variant="compact" className="!inset-0" />
                   
                   <h3 className="text-xl font-semibold text-navy mb-2 group-hover:text-primary transition-colors relative z-10">
                     {project.title}
@@ -209,17 +90,6 @@ export default function Projects() {
                     {project.description}
                   </p>
 
-                  {/* Problem/Solution */}
-                  <div className="space-y-3 mb-4 relative z-10">
-                    <div className="text-sm">
-                      <span className="text-navy font-medium">Challenge: </span>
-                      <span className="text-muted-foreground">{project.problem}</span>
-                    </div>
-                    <div className="text-sm">
-                      <span className="text-primary font-medium">Solution: </span>
-                      <span className="text-muted-foreground">{project.solution}</span>
-                    </div>
-                  </div>
                   {project.link && (
                     <a href={project.link} target="_blank" rel="noopener noreferrer" className="relative z-10 inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline">
                       Visit live site <ExternalLink className="w-4 h-4" />

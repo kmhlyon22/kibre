@@ -5,93 +5,12 @@ import { ArrowRight, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 
-// Import project thumbnails
-import churrosThumb from "@/assets/projects/churros-thumb.png";
-import sunnyThumb from "@/assets/projects/sunny-thumb.png";
-import uconThumb from "@/assets/projects/ucon-thumb.png";
-import yonasThumb from "@/assets/projects/yonas-thumb.jpg";
-import amenThumb from "@/assets/projects/amen-thumb-new.jpg";
-import sfkThumb from "@/assets/projects/sfk-thumb.jpg";
-import honeybadgerThumb from "@/assets/projects/honeybadger-thumb-new.jpg";
-import fiandimoThumb from "@/assets/projects/fiandimo-thumb.png";
-import schoolThumb from "@/assets/projects/school-thumb.jpg";
-import gymThumb from "@/assets/projects/gym-thumb.jpg";
-import medicalThumb from "@/assets/projects/medical-thumb.jpg";
-import afrotattooThumb from "@/assets/projects/afrotattoo-thumb.jpg";
-import kmgThumb from "@/assets/projects/kmg-thumb.jpg";
-import gospelThumb from "@/assets/projects/gospel-thumb.jpg";
-
-// Project data with screenrecordings
-const projects = [
-  {
-    id: 1,
-    title: "Mr. & Mrs. Churros",
-    category: "Website",
-    thumbnail: churrosThumb,
-    screenrecording: "/recordings/churros.mp4",
-  },
-  {
-    id: 2,
-    title: "Sunny Side Hotel",
-    category: "Website",
-    thumbnail: sunnyThumb,
-    screenrecording: "/recordings/sunny-side.mp4",
-  },
-  {
-    id: 3,
-    title: "United Construction",
-    category: "Website",
-    thumbnail: uconThumb,
-    screenrecording: "/recordings/united-construction.mp4",
-  },
-  {
-    id: 4,
-    title: "Yonas Chercher",
-    category: "Website",
-    thumbnail: yonasThumb,
-    screenrecording: "/recordings/yonas-chercher.mp4",
-  },
-  {
-    id: 5,
-    title: "Amen Car Dealership",
-    category: "Website",
-    thumbnail: amenThumb,
-    screenrecording: "/recordings/amen.mp4",
-  },
-  {
-    id: 6,
-    title: "SFK Sports Group",
-    category: "Website",
-    thumbnail: sfkThumb,
-    screenrecording: "/recordings/sfk.mp4",
-  },
-  {
-    id: 7,
-    title: "Honey Badger Courses",
-    category: "Mobile App",
-    thumbnail: honeybadgerThumb,
-    screenrecording: "/recordings/honey-badger.mp4",
-    inProgress: true,
-  },
-  {
-    id: 8,
-    title: "Fiandimo Aquadrill",
-    category: "Website",
-    thumbnail: fiandimoThumb,
-    screenrecording: "/recordings/fiandimo.mp4",
-  },
-  { id: 9, title: "HB School Management System", category: "SaaS", thumbnail: schoolThumb, link: "https://project-qi8ab.vercel.app/", inProgress: true },
-  { id: 10, title: "HB Gym Management System", category: "SaaS", thumbnail: gymThumb, link: "https://swift-gym-sync.lovable.app/", inProgress: true },
-  { id: 11, title: "United Secured Medical Transport", category: "Website", thumbnail: medicalThumb, link: "https://united-website-teal.vercel.app/" },
-  { id: 12, title: "Afro Tattoo Studio", category: "Website", thumbnail: afrotattooThumb, link: "https://afrotattoo.com/" },
-  { id: 13, title: "KMG Engineering", category: "Website", thumbnail: kmgThumb, link: "https://kmgelectricalandsanitary.com/" },
-  { id: 14, title: "Gospel Light Missionary Company", category: "Website", thumbnail: gospelThumb, link: "https://gospel-light-website-main.vercel.app/" },
-] as { id: number; title: string; category: string; thumbnail: string; screenrecording?: string; link?: string; inProgress?: boolean }[];
+import { projects } from "@/data/projects";
 
 export function ProjectsShowcase() {
-  const [selectedProject, setSelectedProject] = useState<typeof projects[0] | null>(null);
+  const [selectedProject, setSelectedProject] = useState<(typeof projects)[number] | null>(null);
 
-  const openProject = (project: typeof projects[0]) => {
+  const openProject = (project: (typeof projects)[number]) => {
     if (project.screenrecording) {
       setSelectedProject(project);
     }
@@ -152,11 +71,6 @@ export function ProjectsShowcase() {
                   <span className="px-3 py-1 bg-primary/90 text-primary-foreground text-xs font-medium rounded-full">
                     {project.category}
                   </span>
-                  {project.inProgress && (
-                    <span className="px-3 py-1 bg-amber-500/90 text-white text-xs font-medium rounded-full animate-pulse">
-                      In Progress
-                    </span>
-                  )}
                 </div>
               </div>
 
@@ -212,11 +126,6 @@ export function ProjectsShowcase() {
                       <span className="text-primary text-sm font-medium">
                         {selectedProject.category}
                       </span>
-                      {selectedProject.inProgress && (
-                        <span className="text-amber-400 text-sm font-medium">
-                          • In Progress
-                        </span>
-                      )}
                     </div>
                     <h3 className="text-white text-xl font-semibold">
                       {selectedProject.title}
