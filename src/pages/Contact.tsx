@@ -15,7 +15,7 @@ import {
   Headphones
 } from "lucide-react";
 import { z } from "zod";
-import contactHeroImage from "@/assets/illustrations/contact-hero.png";
+import contactHeroImage from "@/assets/illustrations/contact-hero.webp";
 import { FloatingTechElements } from "@/components/ui/floating-tech-elements";
 
 const contactSchema = z.object({
@@ -121,7 +121,7 @@ export default function Contact() {
             <div className="flex justify-center animate-fade-in" style={{ animationDelay: "0.2s" }}>
               <div className="relative group">
                 <div className="absolute -inset-4 bg-gradient-to-r from-primary/10 to-sky-light/10 rounded-3xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                <img 
+                <img fetchPriority="high" decoding="async" 
                   src={contactHeroImage} 
                   alt="Contact illustration" 
                   className="relative w-full max-w-xs sm:max-w-sm lg:max-w-md animate-float-subtle mix-blend-multiply transition-transform duration-500 group-hover:scale-105"

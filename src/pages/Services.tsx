@@ -14,7 +14,7 @@ import {
   Layers,
   Code2
 } from "lucide-react";
-import servicesHeroImage from "@/assets/illustrations/services-hero.png";
+import servicesHeroImage from "@/assets/illustrations/services-hero.webp";
 import { FloatingTechElements } from "@/components/ui/floating-tech-elements";
 
 const services = [
@@ -100,7 +100,7 @@ export default function Services() {
             <div className="flex justify-center animate-fade-in" style={{ animationDelay: "0.2s" }}>
               <div className="relative group">
                 <div className="absolute -inset-4 bg-gradient-to-r from-primary/10 to-sky-light/10 rounded-3xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                <img 
+                <img fetchPriority="high" decoding="async" 
                   src={servicesHeroImage} 
                   alt="Services illustration" 
                   className="relative w-full max-w-xs sm:max-w-sm lg:max-w-lg animate-float-subtle mix-blend-multiply transition-transform duration-500 group-hover:scale-105"

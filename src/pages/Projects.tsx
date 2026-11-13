@@ -2,7 +2,7 @@ import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight, Globe, Smartphone, ExternalLink } from "lucide-react";
-import projectsHeroImage from "@/assets/illustrations/projects-hero.png";
+import projectsHeroImage from "@/assets/illustrations/projects-hero.webp";
 import { FloatingTechElements } from "@/components/ui/floating-tech-elements";
 // Import project thumbnails
 import { projects } from "@/data/projects";
@@ -44,7 +44,7 @@ export default function Projects() {
             <div className="flex justify-center animate-fade-in" style={{ animationDelay: "0.2s" }}>
               <div className="relative group">
                 <div className="absolute -inset-4 bg-gradient-to-r from-primary/10 to-sky-light/10 rounded-3xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                <img 
+                <img fetchPriority="high" decoding="async" 
                   src={projectsHeroImage} 
                   alt="Projects illustration" 
                   className="relative w-full max-w-xs sm:max-w-sm lg:max-w-lg animate-float-subtle mix-blend-multiply transition-transform duration-500 group-hover:scale-105"
@@ -67,7 +67,7 @@ export default function Projects() {
               >
                 {/* Image */}
                 <div className="aspect-video bg-secondary relative overflow-hidden">
-                  <img 
+                  <img loading="lazy" decoding="async" 
                     src={project.thumbnail} 
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"

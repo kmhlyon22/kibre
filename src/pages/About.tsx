@@ -14,8 +14,8 @@ import {
   Users,
   Sparkles
 } from "lucide-react";
-import aboutHeroImage from "@/assets/illustrations/about-hero.png";
-import processIllustration from "@/assets/illustrations/process-team.png";
+import aboutHeroImage from "@/assets/illustrations/about-hero.webp";
+import processIllustration from "@/assets/illustrations/process-team.webp";
 import { FloatingTechElements } from "@/components/ui/floating-tech-elements";
 import { useState, useRef } from "react";
 
@@ -116,7 +116,7 @@ export default function About() {
             <div className="flex justify-center animate-fade-in" style={{ animationDelay: "0.2s" }}>
               <div className="relative group">
                 <div className="absolute -inset-4 bg-gradient-to-r from-primary/10 to-sky-light/10 rounded-3xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                <img 
+                <img fetchPriority="high" decoding="async" 
                   src={aboutHeroImage} 
                   alt="About us illustration" 
                   className="relative w-full max-w-xs sm:max-w-sm lg:max-w-lg animate-float-subtle mix-blend-multiply transition-transform duration-500 group-hover:scale-105"
@@ -272,7 +272,7 @@ export default function About() {
                 
                 {/* Illustration with white fade edges */}
                 <div className="relative">
-                  <img 
+                  <img loading="lazy" decoding="async" 
                     src={processIllustration} 
                     alt="Structured engineering process illustration showing connected systems" 
                     className="relative max-w-xs sm:max-w-sm lg:max-w-lg w-full transition-transform duration-500 group-hover:scale-[1.02]"
