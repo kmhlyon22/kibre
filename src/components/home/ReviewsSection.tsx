@@ -14,7 +14,7 @@ export function ReviewsSection() {
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <SectionEyebrow icon={Star} label="Client Reviews" />
+          <SectionEyebrow>Client Reviews</SectionEyebrow>
           <h2 className="text-3xl md:text-4xl font-bold text-navy mt-3 mb-4">What Our Clients Say</h2>
           <div className="flex items-center justify-center gap-2 text-muted-foreground">
             <div className="flex">{Array.from({ length: 5 }).map((_, i) => <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />)}</div>

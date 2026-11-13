@@ -4,7 +4,6 @@ import { ArrowRight, CheckCircle2 } from "lucide-react";
 import dashboardVisual from "@/assets/dashboard-visual.png";
 import { FloatingTechElements } from "@/components/ui/floating-tech-elements";
 
-const heroList = ["ERP Systems", "Website Development", "Mobile Apps"];
 
 export function HeroSection() {
     return (
