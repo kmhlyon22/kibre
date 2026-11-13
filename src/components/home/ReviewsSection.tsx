@@ -1,8 +1,8 @@
 import { Star, Quote } from "lucide-react";
 import { SectionEyebrow } from "@/components/ui/section-eyebrow";
-import afroTattooLogo from "@/assets/clients/afro-tattoo-logo.png";
-import honeyBadgerLogo from "@/assets/clients/honey-badger-logo-new.png";
-import kmgLogo from "@/assets/clients/kmg-logo.png";
+import afroTattooLogo from "@/assets/clients/afro-tattoo-logo.webp";
+import honeyBadgerLogo from "@/assets/clients/honey-badger-logo-new.webp";
+import kmgLogo from "@/assets/clients/kmg-logo.webp";
 
 const MAPS_URL = "https://maps.app.goo.gl/aChkWngdQGw49bRq9";
 

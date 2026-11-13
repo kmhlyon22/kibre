@@ -1,7 +1,7 @@
 import { SectionEyebrow } from "@/components/ui/section-eyebrow";
 import { Headphones, PenTool, Code, LifeBuoy } from "lucide-react";
 import { FloatingTechElements } from "@/components/ui/floating-tech-elements";
-import workflowIllustration from "@/assets/illustrations/workflow-isometric.png";
+import workflowIllustration from "@/assets/illustrations/workflow-isometric.webp";
 import { useState, useRef } from "react";
 
 const steps = [
@@ -109,7 +109,7 @@ export function ProcessSection() {
             
             {/* Illustration with white fade edges */}
             <div className="relative">
-              <img 
+              <img loading="lazy" decoding="async" 
                 src={workflowIllustration} 
                 alt="Tech workflow process illustration showing connected systems and collaboration" 
                 className="relative max-w-xs sm:max-w-sm md:max-w-lg lg:max-w-2xl w-full transition-transform duration-500 group-hover:scale-[1.02]"

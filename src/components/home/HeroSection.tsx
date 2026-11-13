@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
-import dashboardVisual from "@/assets/dashboard-visual.png";
+import dashboardVisual from "@/assets/dashboard-visual.webp";
 import { FloatingTechElements } from "@/components/ui/floating-tech-elements";
 
 
@@ -65,7 +65,7 @@ export function HeroSection() {
 
                     {/* Visual */}
                     <div>
-                        <img
+                        <img fetchPriority="high" decoding="async"
                             src={dashboardVisual}
                             alt="Dashboard visualization showing analytics and data management"
                             className="relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-xl mx-auto mix-blend-multiply"

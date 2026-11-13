@@ -2,17 +2,17 @@ import { SectionEyebrow } from "@/components/ui/section-eyebrow";
 import { useEffect, useState } from "react";
 
 // Import client logos
-import uconLogo from "@/assets/clients/ucon-logo-new.png";
-import yonasChercher from "@/assets/clients/yonas-chercher-logo-new.png";
-import sunnySideHotel from "@/assets/clients/sunny-side-hotel-logo.png";
-import churrosLogo from "@/assets/clients/churros-logo-new.png";
-import honeyBadgerLogo from "@/assets/clients/honey-badger-logo-new.png";
-import fiandimoLogo from "@/assets/clients/fiandimo-logo.png";
-import mtmLogo from "@/assets/clients/mtm-logo.png";
-import afroTattooLogo from "@/assets/clients/afro-tattoo-logo.png";
-import afroEagleLogo from "@/assets/clients/afro-eagle-logo.png";
-import mekelleLogo from "@/assets/clients/mekelle-security-logo.png";
-import kmgLogo from "@/assets/clients/kmg-logo.png";
+import uconLogo from "@/assets/clients/ucon-logo-new.webp";
+import yonasChercher from "@/assets/clients/yonas-chercher-logo-new.webp";
+import sunnySideHotel from "@/assets/clients/sunny-side-hotel-logo.webp";
+import churrosLogo from "@/assets/clients/churros-logo-new.webp";
+import honeyBadgerLogo from "@/assets/clients/honey-badger-logo-new.webp";
+import fiandimoLogo from "@/assets/clients/fiandimo-logo.webp";
+import mtmLogo from "@/assets/clients/mtm-logo.webp";
+import afroTattooLogo from "@/assets/clients/afro-tattoo-logo.webp";
+import afroEagleLogo from "@/assets/clients/afro-eagle-logo.webp";
+import mekelleLogo from "@/assets/clients/mekelle-security-logo.webp";
+import kmgLogo from "@/assets/clients/kmg-logo.webp";
 
 const clients = [
   { id: 1, name: "UCON", logo: uconLogo },
@@ -59,7 +59,7 @@ export function ClientsSection() {
               className="hover:scale-110 transition-all duration-300 opacity-0 animate-fade-in group"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <img
+              <img loading="lazy" decoding="async"
                 src={client.logo}
                 alt={client.name}
                 className="h-14 lg:h-16 max-w-[120px] w-auto object-contain transition-all duration-300 group-hover:drop-shadow-lg"
@@ -79,7 +79,7 @@ export function ClientsSection() {
                 key={client.id}
                 className="min-w-full flex justify-center items-center"
               >
-                <img
+                <img loading="lazy" decoding="async"
                   src={client.logo}
                   alt={client.name}
                   className="h-24 max-w-[200px] w-auto object-contain"
