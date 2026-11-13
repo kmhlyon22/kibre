@@ -1,3 +1,4 @@
+import { SectionEyebrow } from "@/components/ui/section-eyebrow";
 import { useEffect, useState } from "react";
 
 // Import client logos
@@ -31,6 +32,7 @@ export function ClientsSection() {
     <section className="py-16 lg:py-20 bg-secondary/30">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-12 opacity-0 animate-fade-in">
+          <SectionEyebrow>Our Clients</SectionEyebrow>
           <h2 className="text-2xl md:text-3xl font-bold text-navy mb-3">
             Trusted By Growing Businesses
           </h2>

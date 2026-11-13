@@ -128,7 +128,7 @@ export default function Projects() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="bg-hero py-20 lg:py-28 overflow-hidden relative">
+      <section className="bg-hero pt-20 pb-32 lg:pt-28 lg:pb-44 overflow-hidden relative">
         {/* Floating Tech Elements - colorful background illustrations */}
         <FloatingTechElements className="opacity-50 lg:opacity-100" />
         
@@ -160,7 +160,7 @@ export default function Projects() {
                 <img 
                   src={projectsHeroImage} 
                   alt="Projects illustration" 
-                  className="relative w-full max-w-xs sm:max-w-sm lg:max-w-lg animate-float-subtle transition-transform duration-500 group-hover:scale-105"
+                  className="relative w-full max-w-xs sm:max-w-sm lg:max-w-lg animate-float-subtle mix-blend-multiply transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
             </div>
@@ -236,7 +236,7 @@ export default function Projects() {
       <section className="py-20 lg:py-28 bg-secondary/30">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-3xl mx-auto text-center opacity-0 animate-fade-in">
-            <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4">
+            <h2 className="text-3xl md:text-5xl font-bold text-navy mb-4">
               Your Project Could Be Next
             </h2>
             <p className="text-lg text-muted-foreground mb-8">

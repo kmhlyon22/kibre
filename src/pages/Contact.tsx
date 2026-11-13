@@ -103,7 +103,7 @@ export default function Contact() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="bg-hero py-20 lg:py-28 overflow-hidden relative">
+      <section className="bg-hero pt-20 pb-32 lg:pt-28 lg:pb-44 overflow-hidden relative">
         {/* Floating Tech Elements - visible on all screens */}
         <FloatingTechElements variant="minimal" className="opacity-50 lg:opacity-100" />
         
@@ -125,7 +125,7 @@ export default function Contact() {
                 <img 
                   src={contactHeroImage} 
                   alt="Contact illustration" 
-                  className="relative w-full max-w-xs sm:max-w-sm lg:max-w-md animate-float-subtle transition-transform duration-500 group-hover:scale-105"
+                  className="relative w-full max-w-xs sm:max-w-sm lg:max-w-md animate-float-subtle mix-blend-multiply transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
             </div>

@@ -1,3 +1,4 @@
+import { SectionEyebrow } from "@/components/ui/section-eyebrow";
 import { Building2, ShoppingBag, Utensils, Building, Factory, Truck, GraduationCap, HeartPulse } from "lucide-react";
 import { TechNetworkBackground } from "@/components/ui/tech-network-background";
 
@@ -129,9 +130,7 @@ export function IndustriesSection() {
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         {/* Section header */}
         <div className="text-center mb-12 lg:mb-16">
-          <span className="inline-block px-4 py-1.5 bg-sky/10 text-sky rounded-full text-sm font-medium mb-4">
-            Our Expertise
-          </span>
+          <SectionEyebrow>Our Expertise</SectionEyebrow>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-navy mb-4">
             Industries We Serve
           </h2>

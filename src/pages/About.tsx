@@ -1,3 +1,4 @@
+import { SectionEyebrow } from "@/components/ui/section-eyebrow";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -93,7 +94,7 @@ export default function About() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="bg-hero py-20 lg:py-28 overflow-hidden relative">
+      <section className="bg-hero pt-20 pb-32 lg:pt-28 lg:pb-44 overflow-hidden relative">
         {/* Floating Tech Elements - visible on all screens */}
         <FloatingTechElements className="opacity-50 lg:opacity-100" />
         
@@ -119,7 +120,7 @@ export default function About() {
                 <img 
                   src={aboutHeroImage} 
                   alt="About us illustration" 
-                  className="relative w-full max-w-xs sm:max-w-sm lg:max-w-lg animate-float-subtle transition-transform duration-500 group-hover:scale-105"
+                  className="relative w-full max-w-xs sm:max-w-sm lg:max-w-lg animate-float-subtle mix-blend-multiply transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
             </div>
@@ -133,7 +134,8 @@ export default function About() {
           <div className="max-w-4xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="opacity-0 animate-slide-up">
-                <h2 className="text-3xl md:text-4xl font-bold text-navy mb-6">
+                <SectionEyebrow>Who We Are</SectionEyebrow>
+                <h2 className="text-3xl md:text-5xl font-bold text-navy mb-6">
                   Why We Exist
                 </h2>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -172,7 +174,8 @@ export default function About() {
       <section className="py-20 lg:py-28 bg-secondary/30">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-16 opacity-0 animate-fade-in">
-            <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4">
+            <SectionEyebrow>Our Values</SectionEyebrow>
+            <h2 className="text-3xl md:text-5xl font-bold text-navy mb-4">
               Our Values
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -216,7 +219,8 @@ export default function About() {
         
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="text-center mb-16 opacity-0 animate-fade-in">
-            <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4">
+            <SectionEyebrow>Our Process</SectionEyebrow>
+            <h2 className="text-3xl md:text-5xl font-bold text-navy mb-4">
               Our Process
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -319,7 +323,7 @@ export default function About() {
         
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="max-w-3xl mx-auto text-center opacity-0 animate-fade-in">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
+            <h2 className="text-3xl md:text-5xl font-bold text-primary-foreground mb-4">
               Let's Work Together
             </h2>
             <p className="text-lg text-primary-foreground/70 mb-8">

@@ -18,13 +18,13 @@ export function Header() {
   const location = useLocation();
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md shadow-sm">
       <nav className="container mx-auto px-4 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
+        <div className="flex h-20 items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <img src={logo} alt="United Tech" className="w-10 h-10 rounded-lg object-contain" />
-            <span className="font-semibold text-lg text-navy">United Tech</span>
+            <img src={logo} alt="United Tech" className="w-12 h-12 rounded-lg object-contain" />
+            <span className="font-bold text-xl text-navy">United Tech</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -34,10 +34,10 @@ export function Header() {
                 key={item.name}
                 to={item.href}
                 className={cn(
-                  "px-4 py-2 text-sm font-medium rounded-lg transition-colors",
+                  "px-4 py-2 text-[15px] font-semibold transition-colors",
                   location.pathname === item.href
-                    ? "text-primary bg-primary/5"
-                    : "text-muted-foreground hover:text-navy hover:bg-muted"
+                    ? "text-primary"
+                    : "text-navy hover:text-primary"
                 )}
               >
                 {item.name}
@@ -47,7 +47,7 @@ export function Header() {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button asChild variant="hero" size="sm">
+            <Button asChild variant="hero">
               <Link to="/contact">Get a Free Consultation</Link>
             </Button>
           </div>
