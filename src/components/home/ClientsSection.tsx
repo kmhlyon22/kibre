@@ -43,7 +43,7 @@ export function ClientsSection() {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-12 opacity-0 animate-fade-in">
           <SectionEyebrow>Our Clients</SectionEyebrow>
-          <h2 className="text-2xl md:text-3xl font-bold text-navy mb-3">
+          <h2 className="text-2xl md:text-3xl font-bold text-heading mb-3">
             Trusted By Growing Businesses
           </h2>
           <p className="text-muted-foreground">

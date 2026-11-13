@@ -129,7 +129,7 @@ export function IndustriesSection() {
         {/* Section header */}
         <div className="text-center mb-12 lg:mb-16">
           <SectionEyebrow>Our Expertise</SectionEyebrow>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-navy mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-heading mb-4">
             Industries We Serve
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -247,7 +247,7 @@ export function IndustriesSection() {
                 </div>
                 
                 {/* Text */}
-                <h3 className="text-base lg:text-lg font-semibold text-navy mb-1 group-hover:text-sky transition-colors duration-300">
+                <h3 className="text-base lg:text-lg font-semibold text-heading mb-1 group-hover:text-sky transition-colors duration-300">
                   {industry.name}
                 </h3>
                 <p className="text-xs lg:text-sm text-muted-foreground group-hover:text-foreground/70 transition-colors duration-300">

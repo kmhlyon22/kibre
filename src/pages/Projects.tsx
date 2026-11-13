@@ -22,7 +22,7 @@ export default function Projects() {
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left opacity-0 animate-fade-in">
-              <h1 className="text-4xl md:text-5xl font-bold text-navy mb-6">
+              <h1 className="text-4xl md:text-5xl font-bold text-heading mb-6">
                 Our Projects
               </h1>
               <p className="text-lg text-muted-foreground mb-8">
@@ -83,7 +83,7 @@ export default function Projects() {
                 <div className="p-6 relative">
                   {/* Tech Network Background */}
                   
-                  <h3 className="text-xl font-semibold text-navy mb-2 group-hover:text-primary transition-colors relative z-10">
+                  <h3 className="text-xl font-semibold text-heading mb-2 group-hover:text-primary transition-colors relative z-10">
                     {project.title}
                   </h3>
                   <p className="text-muted-foreground text-sm mb-4 relative z-10">
@@ -106,7 +106,7 @@ export default function Projects() {
       <section className="py-20 lg:py-28 bg-secondary/30">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-3xl mx-auto text-center opacity-0 animate-fade-in">
-            <h2 className="text-3xl md:text-5xl font-bold text-navy mb-4">
+            <h2 className="text-3xl md:text-5xl font-bold text-heading mb-4">
               Your Project Could Be Next
             </h2>
             <p className="text-lg text-muted-foreground mb-8">

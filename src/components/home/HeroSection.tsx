@@ -29,12 +29,12 @@ export function HeroSection() {
                         </div>
 
                         {/* Main Headline */}
-                        <h1 className="text-5xl md:text-6xl font-bold text-navy leading-tight mb-4">
+                        <h1 className="text-5xl md:text-6xl font-bold text-heading leading-tight mb-4">
                             United Tech{" "}
                             <span style={{ color: "#8B5A2B" }}>Ethiopia</span>
                         </h1>
 
-                        <h2 className="text-2xl md:text-4xl font-bold text-navy leading-snug mb-6">
+                        <h2 className="text-2xl md:text-4xl font-bold text-heading leading-snug mb-6">
                             The best <span className="text-primary">website, mobile app and ERP system</span> developers in Addis Ababa, Ethiopia.
                         </h2>
 
@@ -68,7 +68,7 @@ export function HeroSection() {
                         <img
                             src={dashboardVisual}
                             alt="Dashboard visualization showing analytics and data management"
-                            className="relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-xl mx-auto mix-blend-multiply"
+                            className="relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-xl mx-auto rounded-2xl shadow-elevated ring-1 ring-primary/20"
                         />
                     </div>
                 </div>

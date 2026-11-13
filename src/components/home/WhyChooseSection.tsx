@@ -14,7 +14,7 @@ export function WhyChooseSection() {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-14">
           <SectionEyebrow>Why Us</SectionEyebrow>
-          <h2 className="text-3xl md:text-5xl font-bold text-navy">Why Choose United Tech</h2>
+          <h2 className="text-3xl md:text-5xl font-bold text-heading">Why Choose United Tech</h2>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {reasons.map((r) => (
@@ -22,7 +22,7 @@ export function WhyChooseSection() {
               <div className="w-16 h-16 mx-auto mb-5 rounded-full bg-primary/10 flex items-center justify-center transition-colors group-hover:bg-primary">
                 <r.icon className="w-7 h-7 text-primary transition-colors group-hover:text-primary-foreground" />
               </div>
-              <h3 className="text-xl font-bold text-navy mb-2">{r.title}</h3>
+              <h3 className="text-xl font-bold text-heading mb-2">{r.title}</h3>
               <p className="text-muted-foreground text-sm">{r.text}</p>
             </div>
           ))}

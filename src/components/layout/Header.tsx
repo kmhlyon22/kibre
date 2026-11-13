@@ -24,7 +24,7 @@ export function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
             <img src={logo} alt="United Tech" className="w-12 h-12 rounded-lg object-contain" />
-            <span className="font-bold text-xl text-navy">United Tech</span>
+            <span className="font-bold text-xl text-heading">United Tech</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -37,7 +37,7 @@ export function Header() {
                   "px-4 py-2 text-[15px] font-semibold transition-colors",
                   location.pathname === item.href
                     ? "text-primary"
-                    : "text-navy hover:text-primary"
+                    : "text-heading hover:text-primary"
                 )}
               >
                 {item.name}
@@ -58,9 +58,9 @@ export function Header() {
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             {mobileMenuOpen ? (
-              <X className="w-5 h-5 text-navy" />
+              <X className="w-5 h-5 text-heading" />
             ) : (
-              <Menu className="w-5 h-5 text-navy" />
+              <Menu className="w-5 h-5 text-heading" />
             )}
           </button>
         </div>
@@ -78,7 +78,7 @@ export function Header() {
                     "px-4 py-3 text-sm font-medium rounded-lg transition-colors",
                     location.pathname === item.href
                       ? "text-primary bg-primary/5"
-                      : "text-muted-foreground hover:text-navy hover:bg-muted"
+                      : "text-muted-foreground hover:text-heading hover:bg-muted"
                   )}
                 >
                   {item.name}

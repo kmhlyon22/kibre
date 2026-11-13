@@ -27,7 +27,7 @@ export function ProjectsShowcase() {
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
           <div>
             <SectionEyebrow>Recent Works</SectionEyebrow>
-            <h2 className="text-3xl md:text-5xl font-bold text-navy mb-3">
+            <h2 className="text-3xl md:text-5xl font-bold text-heading mb-3">
               Our Past Projects
             </h2>
             <p className="text-muted-foreground max-w-xl">

@@ -100,11 +100,11 @@ export default function About() {
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left animate-fade-in">
-              <h1 className="text-4xl md:text-5xl font-bold text-navy mb-6">
+              <h1 className="text-4xl md:text-5xl font-bold text-heading mb-6">
                 About United Tech
               </h1>
               <p className="text-lg text-muted-foreground mb-4">
-                We're a technology company based in <strong className="text-navy">Addis Ababa, Ethiopia</strong>, 
+                We're a technology company based in <strong className="text-heading">Addis Ababa, Ethiopia</strong>, 
                 building ERP systems, websites, and applications for growing businesses. 
                 We value clarity, reliability, and long-term relationships.
               </p>
@@ -134,7 +134,7 @@ export default function About() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="opacity-0 animate-slide-up">
                 <SectionEyebrow>Who We Are</SectionEyebrow>
-                <h2 className="text-3xl md:text-5xl font-bold text-navy mb-6">
+                <h2 className="text-3xl md:text-5xl font-bold text-heading mb-6">
                   Why We Exist
                 </h2>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -151,7 +151,7 @@ export default function About() {
               <div className="bg-card rounded-2xl p-8 border border-border/50 card-hover opacity-0 animate-slide-up stagger-2 relative overflow-hidden">
                 {/* Tech Network Background */}
                 
-                <h3 className="text-lg font-semibold text-navy mb-6 relative z-10">
+                <h3 className="text-lg font-semibold text-heading mb-6 relative z-10">
                   What Makes Us Different
                 </h3>
                 <ul className="space-y-4 relative z-10">
@@ -173,7 +173,7 @@ export default function About() {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-16 opacity-0 animate-fade-in">
             <SectionEyebrow>Our Values</SectionEyebrow>
-            <h2 className="text-3xl md:text-5xl font-bold text-navy mb-4">
+            <h2 className="text-3xl md:text-5xl font-bold text-heading mb-4">
               Our Values
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -192,7 +192,7 @@ export default function About() {
                 <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors icon-hover relative z-10">
                   <value.icon className="w-7 h-7 text-primary" />
                 </div>
-                <h3 className="text-lg font-semibold text-navy mb-2 relative z-10">
+                <h3 className="text-lg font-semibold text-heading mb-2 relative z-10">
                   {value.title}
                 </h3>
                 <p className="text-sm text-muted-foreground relative z-10">
@@ -217,7 +217,7 @@ export default function About() {
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="text-center mb-16 opacity-0 animate-fade-in">
             <SectionEyebrow>Our Process</SectionEyebrow>
-            <h2 className="text-3xl md:text-5xl font-bold text-navy mb-4">
+            <h2 className="text-3xl md:text-5xl font-bold text-heading mb-4">
               Our Process
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -248,7 +248,7 @@ export default function About() {
 
                     {/* Content */}
                     <div className="pt-2">
-                      <h3 className="text-xl font-semibold text-navy mb-2">
+                      <h3 className="text-xl font-semibold text-heading mb-2">
                         {item.title}
                       </h3>
                       <p className="text-muted-foreground leading-relaxed">

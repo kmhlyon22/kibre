@@ -31,7 +31,7 @@ export function Layout({ children }: LayoutProps) {
   const parallax3 = scrollY * 0.08;
 
   return (
-    <div className="min-h-screen flex flex-col relative overflow-hidden bg-white">
+    <div className="min-h-screen flex flex-col relative overflow-hidden bg-background">
       {/* Ambient Background Motion Graphics with Parallax */}
       <div className="fixed inset-0 pointer-events-none z-0">
         
