@@ -16,7 +16,7 @@ const buttonVariants = cva(
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         hero: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-[0_4px_25px_-3px_hsl(199_89%_48%/0.6)] hover:shadow-[0_8px_40px_-3px_hsl(199_89%_48%/0.7)] hover:scale-[1.02] active:scale-[0.98]",
-        heroOutline: "border-2 border-heading bg-transparent text-heading shadow-[0_0_15px_-4px_hsl(222_47%_11%/0.15)] hover:bg-heading hover:text-navy hover:shadow-[0_0_25px_-3px_hsl(222_47%_11%/0.25)]",
+        heroOutline: "border-2 border-heading bg-transparent text-heading shadow-[0_0_15px_-4px_hsl(222_47%_11%/0.15)] hover:bg-navy hover:text-primary-foreground hover:shadow-[0_0_25px_-3px_hsl(222_47%_11%/0.25)]",
       },
       size: {
         default: "h-10 px-4 py-2",
