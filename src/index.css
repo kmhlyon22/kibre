@@ -6,23 +6,23 @@
 
 @layer base {
   :root {
-    --background: 210 40% 98%;
-    --foreground: 222 47% 11%;
+    --background: 222 47% 13%;
+    --foreground: 210 40% 92%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
+    --card: 221 42% 17%;
+    --card-foreground: 210 40% 92%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
+    --popover: 221 42% 17%;
+    --popover-foreground: 210 40% 92%;
 
     --primary: 199 89% 48%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 222 47% 11%;
+    --secondary: 220 38% 20%;
+    --secondary-foreground: 210 40% 92%;
 
-    --muted: 210 40% 96%;
-    --muted-foreground: 215 16% 47%;
+    --muted: 220 38% 20%;
+    --muted-foreground: 215 22% 70%;
 
     --accent: 199 89% 48%;
     --accent-foreground: 0 0% 100%;
@@ -30,18 +30,19 @@
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
+    --border: 220 33% 24%;
+    --input: 220 33% 24%;
     --ring: 199 89% 48%;
 
     --radius: 0.75rem;
 
     /* Custom tokens */
-    --navy: 222 47% 11%;
+    --navy: 222 50% 8%;
+    --heading: 210 40% 98%;
     --navy-light: 215 25% 27%;
     --sky: 199 89% 48%;
     --sky-light: 199 95% 74%;
-    --sky-subtle: 199 100% 97%;
+    --sky-subtle: 210 45% 18%;
     
     /* Gradients */
     --gradient-hero: linear-gradient(135deg, hsl(199 100% 97%) 0%, hsl(210 40% 98%) 50%, hsl(0 0% 100%) 100%);
@@ -134,7 +135,7 @@
   /* Wavy light-sky banner with a soft white blob on the right */
   .bg-hero {
     background-color: hsl(var(--background));
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 900' preserveAspectRatio='none'%3E%3Cpath d='M0 0H1440V640C1180 760 980 820 720 830C430 840 200 790 0 720Z' fill='%23d9f6fd'/%3E%3Cpath d='M700 0C620 120 740 260 690 430C640 600 700 800 880 805C1120 810 1300 720 1440 650V0Z' fill='%23ffffff'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 900' preserveAspectRatio='none'%3E%3Cpath d='M0 0H1440V640C1180 760 980 820 720 830C430 840 200 790 0 720Z' fill='%23173056'/%3E%3Cpath d='M700 0C620 120 740 260 690 430C640 600 700 800 880 805C1120 810 1300 720 1440 650V0Z' fill='%231c2f52'/%3E%3C/svg%3E");
     background-size: 100% 100%;
     background-repeat: no-repeat;
   }
@@ -189,7 +190,7 @@
 
   /* Subtle gradient background for sections */
   .bg-gradient-subtle {
-    background: linear-gradient(180deg, hsl(210 40% 98%) 0%, hsl(199 100% 97%) 50%, hsl(210 40% 98%) 100%);
+    background: linear-gradient(180deg, hsl(222 47% 13%) 0%, hsl(215 45% 17%) 50%, hsl(222 47% 13%) 100%);
   }
 
   /* Animated gradient border */
