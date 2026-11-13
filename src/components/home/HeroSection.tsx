@@ -29,12 +29,12 @@ export function HeroSection() {
                         </div>
 
                         {/* Main Headline */}
-                        <h1 className="text-5xl md:text-6xl font-bold text-navy leading-tight mb-4">
+                        <h1 className="text-5xl md:text-6xl font-bold text-heading leading-tight mb-4">
                             United Tech{" "}
                             <span style={{ color: "#8B5A2B" }}>Ethiopia</span>
                         </h1>
 
-                        <h2 className="text-2xl md:text-4xl font-bold text-navy leading-snug mb-6">
+                        <h2 className="text-2xl md:text-4xl font-bold text-heading leading-snug mb-6">
                             The best <span className="text-primary">website, mobile app and ERP system</span> developers in Addis Ababa, Ethiopia.
                         </h2>
 

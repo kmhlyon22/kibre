@@ -31,7 +31,7 @@ export function ServicesPreview() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <SectionEyebrow>Our Solutions</SectionEyebrow>
-          <h2 className="text-3xl md:text-5xl font-bold text-navy mb-4">
+          <h2 className="text-3xl md:text-5xl font-bold text-heading mb-4">
             What We Build
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -55,7 +55,7 @@ export function ServicesPreview() {
               </div>
 
               {/* Content */}
-              <h3 className="text-xl font-semibold text-navy mb-3 group-hover:text-primary transition-colors relative z-10">
+              <h3 className="text-xl font-semibold text-heading mb-3 group-hover:text-primary transition-colors relative z-10">
                 {service.title}
               </h3>
               <p className="text-muted-foreground mb-6 leading-relaxed relative z-10">

@@ -88,7 +88,7 @@ export default function Services() {
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left animate-fade-in">
-              <h1 className="text-4xl md:text-5xl font-bold text-navy mb-6">
+              <h1 className="text-4xl md:text-5xl font-bold text-heading mb-6">
                 Our Services
               </h1>
               <p className="text-lg text-muted-foreground">
@@ -131,7 +131,7 @@ export default function Services() {
                 </div>
 
                 {/* Title & Description */}
-                <h2 className="text-3xl md:text-5xl font-bold text-navy mb-4">
+                <h2 className="text-3xl md:text-5xl font-bold text-heading mb-4">
                   {service.title}
                 </h2>
                 <p className="text-lg text-muted-foreground mb-8">
@@ -169,7 +169,7 @@ export default function Services() {
                 <div className="bg-card rounded-2xl p-8 border border-border/50 shadow-card card-hover relative overflow-hidden">
                   {/* Tech Network Background */}
                   
-                  <h3 className="text-lg font-semibold text-navy mb-6 relative z-10">
+                  <h3 className="text-lg font-semibold text-heading mb-6 relative z-10">
                     What You Get
                   </h3>
                   <ul className="space-y-4 relative z-10">

@@ -53,7 +53,7 @@ export function ProcessSection() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <SectionEyebrow>How We Work</SectionEyebrow>
-          <h2 className="text-3xl md:text-5xl font-bold text-navy mb-4">
+          <h2 className="text-3xl md:text-5xl font-bold text-heading mb-4">
             How We Work
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -86,7 +86,7 @@ export function ProcessSection() {
                 </div>
 
                 {/* Content */}
-                <h3 className="text-lg font-semibold text-navy mb-2 group-hover:text-primary transition-colors">
+                <h3 className="text-lg font-semibold text-heading mb-2 group-hover:text-primary transition-colors">
                   {step.title}
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">

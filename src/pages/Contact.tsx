@@ -109,7 +109,7 @@ export default function Contact() {
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left animate-fade-in">
-              <h1 className="text-4xl md:text-5xl font-bold text-navy mb-6">
+              <h1 className="text-4xl md:text-5xl font-bold text-heading mb-6">
                 Let's Discuss Your Project
               </h1>
               <p className="text-lg text-muted-foreground">
@@ -147,7 +147,7 @@ export default function Contact() {
                       <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6 animate-glow">
                         <CheckCircle2 className="w-8 h-8 text-primary" />
                       </div>
-                      <h3 className="text-2xl font-semibold text-navy mb-2">
+                      <h3 className="text-2xl font-semibold text-heading mb-2">
                         Message Sent!
                       </h3>
                       <p className="text-muted-foreground mb-6">
@@ -160,7 +160,7 @@ export default function Contact() {
                   ) : (
                     <form onSubmit={handleSubmit} className="space-y-6 relative z-10">
                       <div className="opacity-0 animate-fade-in stagger-1">
-                        <Label htmlFor="name" className="text-navy font-medium">
+                        <Label htmlFor="name" className="text-heading font-medium">
                           Your Name
                         </Label>
                         <Input
@@ -177,7 +177,7 @@ export default function Contact() {
                       </div>
 
                       <div className="opacity-0 animate-fade-in stagger-2">
-                        <Label htmlFor="email" className="text-navy font-medium">
+                        <Label htmlFor="email" className="text-heading font-medium">
                           Email Address
                         </Label>
                         <Input
@@ -195,7 +195,7 @@ export default function Contact() {
                       </div>
 
                       <div className="opacity-0 animate-fade-in stagger-3">
-                        <Label htmlFor="message" className="text-navy font-medium">
+                        <Label htmlFor="message" className="text-heading font-medium">
                           Tell Us About Your Project
                         </Label>
                         <Textarea
@@ -249,7 +249,7 @@ export default function Contact() {
                         <benefit.icon className="w-5 h-5 text-primary" />
                       </div>
                       <div>
-                        <h3 className="font-semibold text-navy mb-1">
+                        <h3 className="font-semibold text-heading mb-1">
                           {benefit.title}
                         </h3>
                         <p className="text-sm text-muted-foreground">
@@ -262,7 +262,7 @@ export default function Contact() {
 
                 {/* Alternative Contact */}
                 <div className="bg-secondary/50 rounded-2xl p-6 opacity-0 animate-fade-in stagger-4">
-                  <h3 className="font-semibold text-navy mb-4">
+                  <h3 className="font-semibold text-heading mb-4">
                     Prefer to Talk Directly?
                   </h3>
                   <div className="space-y-3">
@@ -271,7 +271,7 @@ export default function Contact() {
                       className="flex items-center gap-3 w-full p-3 rounded-lg bg-[#25D366]/10 hover:bg-[#25D366]/20 transition-all duration-300 text-left hover:scale-[1.02] hover:shadow-md"
                     >
                       <MessageCircle className="w-5 h-5 text-[#25D366]" />
-                      <span className="text-sm font-medium text-navy">
+                      <span className="text-sm font-medium text-heading">
                         Chat on WhatsApp
                       </span>
                     </button>
@@ -282,7 +282,7 @@ export default function Contact() {
                       className="flex items-center gap-3 w-full p-3 rounded-lg bg-[#0088cc]/10 hover:bg-[#0088cc]/20 transition-all duration-300 hover:scale-[1.02] hover:shadow-md"
                     >
                       <Send className="w-5 h-5 text-[#0088cc]" />
-                      <span className="text-sm font-medium text-navy">
+                      <span className="text-sm font-medium text-heading">
                         Message on Telegram
                       </span>
                     </a>
@@ -291,7 +291,7 @@ export default function Contact() {
                       className="flex items-center gap-3 w-full p-3 rounded-lg bg-primary/10 hover:bg-primary/20 transition-all duration-300 hover:scale-[1.02] hover:shadow-md"
                     >
                       <Mail className="w-5 h-5 text-primary" />
-                      <span className="text-sm font-medium text-navy">
+                      <span className="text-sm font-medium text-heading">
                         unitedtechnologieseth@gmail.com
                       </span>
                     </a>

@@ -9,7 +9,7 @@ export function CTASection() {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <SectionEyebrow>Get Started</SectionEyebrow>
-          <h2 className="text-3xl md:text-5xl font-bold text-navy mb-4">
+          <h2 className="text-3xl md:text-5xl font-bold text-heading mb-4">
             Ready to Build Something Great?
           </h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
