@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, MessageCircle, MapPin } from "lucide-react";
-import logo from "@/assets/united-tech-logo.jpg";
+import logoAsset from "@/assets/united-tech-logo.webp.asset.json";
 import worldMap from "@/assets/illustrations/world-map-golden.webp";
 
 const navigation = {
@@ -36,7 +36,7 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center gap-2 mb-4">
-              <img src={logo} alt="United Tech" className="w-10 h-10 rounded-lg object-contain bg-white" />
+              <img src={logoAsset.url} alt="United Tech" className="w-10 h-10 rounded-lg object-contain bg-white" />
               <span className="font-semibold text-lg">United Tech</span>
             </Link>
             <p className="text-primary-foreground/70 text-sm leading-relaxed mb-6">
