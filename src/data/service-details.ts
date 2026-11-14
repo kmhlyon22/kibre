@@ -1,0 +1,55 @@
+export const serviceDetails = {
+  "website-development-ethiopia": {
+    title: "Website Development in Ethiopia",
+    eyebrow: "Websites for growing businesses",
+    intro: "Our Addis Ababa team develops professional websites for businesses across Ethiopia. From a restaurant's online presence to an engineering company's portfolio, we organize your content around what customers need to know and how they can reach you.",
+    image: "websites",
+    overview: "A website built around your business",
+    paragraphs: [
+      "We start with your audience, services and goals, then plan the pages, navigation and enquiry paths. Your site should make it easy for a visitor to understand your business, see your work and take the next step.",
+      "Development includes layouts that work on phones and desktops, optimized images, clear page headings and search metadata. We can help organize your service content and maintain the website as your business grows. These foundations support search visibility; they do not guarantee a Google ranking.",
+    ],
+    features: ["Business, restaurant and organization websites", "Mobile-first layouts and optimized images", "Service pages, portfolios and enquiry links", "Search titles, descriptions and crawlable page structure"],
+    projectIds: [13, 17, 10, 12],
+    projectHeading: "Website projects from our portfolio",
+    projectIntro: "Explore websites built for Afro Tattoo Studio, KMG Engineering, United Construction and Yonas Cher Cher Restaurant.",
+    scope: "Website cost and timing depend on the number of pages, available content, design requirements and integrations. Share your goals and any reference websites so we can discuss the scope before development starts.",
+    serviceType: "Website development",
+  },
+  "erp-development-ethiopia": {
+    title: "Custom ERP Development in Ethiopia",
+    eyebrow: "Connected business operations",
+    intro: "United Tech builds custom ERP systems in Addis Ababa for Ethiopian businesses that need connected workflows. We bring sales, inventory, reporting and operational records into systems shaped around how your team actually works.",
+    image: "erp",
+    overview: "Business software that fits your workflow",
+    paragraphs: [
+      "We map the work your team does, the information it uses and the decisions it needs to make. Together, we define the modules, user permissions and reports your business needs rather than adding unnecessary complexity.",
+      "Our portfolio includes gym operations, school management, sales and inventory, and construction management systems. We plan development in clear stages, review working screens with you, and provide support as your workflows evolve.",
+    ],
+    features: ["Sales, stock and branch-level inventory workflows", "Business reporting and operational dashboards", "Role-based access and secure data handling", "School, gym and construction management systems"],
+    projectIds: [3, 4, 5, 6],
+    projectHeading: "ERP and management system projects",
+    projectIntro: "See MTM Gym ERP, HB School Management, KMG Engineering ERP and Afro Eagle Engineering ERP.",
+    scope: "ERP scope depends on your departments, users, branches, reports and any existing data or integrations. Tell us which tasks are currently manual or disconnected so we can identify the right starting point.",
+    serviceType: "Custom ERP system development",
+  },
+  "mobile-app-development-ethiopia": {
+    title: "Mobile App Development in Ethiopia",
+    eyebrow: "Applications for people and teams",
+    intro: "Our team in Addis Ababa develops Android and web applications for businesses across Ethiopia. We focus on clear interfaces, secure data handling and practical workflows for customers, staff and administrators.",
+    image: "apps",
+    overview: "From a business need to a usable application",
+    paragraphs: [
+      "We first establish who will use the application, which tasks matter most and whether an Android app, a web application or a combination is appropriate. We then plan the screens, account access and information flows around those needs.",
+      "Design and development are reviewed with you before launch, with attention to usability, performance and maintainability. Our related platform work includes online learning, school management and civic reporting. The examples below are web platforms, not a claim that each has a native mobile app.",
+    ],
+    features: ["Android and browser-based application development", "Interface design around core user tasks", "Account access and secure application data", "Testing, launch planning and ongoing maintenance"],
+    projectIds: [1, 2, 4],
+    projectHeading: "Related application and platform work",
+    projectIntro: "Explore our online learning, civic reporting and school management platforms.",
+    scope: "Share your target users, essential features and preferred platforms. Application cost and timing depend on the screens, permissions, integrations and release requirements agreed for your project.",
+    serviceType: "Android and web application development",
+  },
+} as const;
+
+export type ServiceSlug = keyof typeof serviceDetails;

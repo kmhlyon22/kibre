@@ -113,8 +113,9 @@ export default function Contact() {
                 Let's Discuss Your Project
               </h1>
               <p className="text-lg text-muted-foreground">
-                Have an idea? Need a solution? Just want to chat? We're here to help. 
-                No pressure, no obligations—just a conversation.
+                Talk to our Addis Ababa team about website development, ERP systems or
+                mobile applications for your business in Ethiopia. Share your goals and
+                we’ll help you plan the next step.
               </p>
             </div>
             {/* Illustration - visible on all screens, below text on mobile */}

@@ -104,7 +104,7 @@ export default function About() {
                 About United Tech
               </h1>
               <p className="text-lg text-muted-foreground mb-4">
-                We're a technology company based in <strong className="text-heading">Addis Ababa, Ethiopia</strong>, 
+                We're a software and technology company based in <strong className="text-heading">Addis Ababa, Ethiopia</strong>,
                 building ERP systems, websites, and applications for growing businesses. 
                 We value clarity, reliability, and long-term relationships.
               </p>

@@ -20,10 +20,11 @@ import { FloatingTechElements } from "@/components/ui/floating-tech-elements";
 const services = [
   {
     id: "erp",
+    href: "/erp-development-ethiopia",
     icon: Database,
     title: "ERP Systems",
     tagline: "Streamline Your Business Operations",
-    description: "Custom enterprise resource planning solutions designed specifically for your business needs. We build secure, scalable systems that grow with you.",
+    description: "Custom ERP development for businesses in Ethiopia, built by our Addis Ababa team. Connect inventory, sales, reporting and daily workflows in a secure system tailored to your operations.",
     features: [
       { icon: BarChart3, text: "Real-time business analytics and reporting" },
       { icon: Layers, text: "Inventory and supply chain management" },
@@ -39,10 +40,11 @@ const services = [
   },
   {
     id: "websites",
+    href: "/website-development-ethiopia",
     icon: Globe,
     title: "Website Development",
     tagline: "Professional Websites That Convert",
-    description: "Fast, responsive websites that look professional on every device. Optimized for search engines to help you reach more customers.",
+    description: "Professional website development in Ethiopia for companies, restaurants and organizations. Our Addis Ababa team creates mobile-friendly websites with clear content, fast-loading images and search-friendly page structure.",
     features: [
       { icon: Smartphone, text: "Mobile-first responsive design" },
       { icon: Search, text: "SEO optimization for better visibility" },
@@ -58,10 +60,11 @@ const services = [
   },
   {
     id: "apps",
+    href: "/mobile-app-development-ethiopia",
     icon: Smartphone,
     title: "App Development",
     tagline: "Apps Your Users Will Love",
-    description: "Android and web applications with clean interfaces and secure backends. We focus on usability and performance to create apps people actually enjoy using.",
+    description: "Mobile app and web application development in Addis Ababa, Ethiopia. We build Android and browser-based applications with clear interfaces, secure data handling and workflows designed for your users.",
     features: [
       { icon: Code2, text: "Clean, maintainable code architecture" },
       { icon: Layers, text: "Intuitive user interface design" },
@@ -89,11 +92,11 @@ export default function Services() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left animate-fade-in">
               <h1 className="text-4xl md:text-5xl font-bold text-heading mb-6">
-                Our Services
+                Software Development Services in Ethiopia
               </h1>
               <p className="text-lg text-muted-foreground">
-                We focus on three core areas where we deliver the most value: 
-                ERP systems, websites, and applications. Quality over quantity.
+                From our team in Addis Ababa, we build ERP systems, websites and
+                applications for businesses across Ethiopia. Explore the service that fits your needs.
               </p>
             </div>
             {/* Illustration - visible on all screens, below text on mobile */}
@@ -161,6 +164,9 @@ export default function Services() {
                     Discuss Your Project
                     <ArrowRight className="w-4 h-4" />
                   </Link>
+                </Button>
+                <Button asChild variant="link" className="mt-4 flex h-auto p-0 justify-start whitespace-normal">
+                  <Link to={service.href}>Explore {service.title} in Ethiopia<ArrowRight className="w-4 h-4" /></Link>
                 </Button>
               </div>
 

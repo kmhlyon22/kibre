@@ -6,18 +6,21 @@ import { Database, Globe, Smartphone, ArrowRight } from "lucide-react";
 const services = [
   {
     icon: Database,
+    href: "/erp-development-ethiopia",
     title: "ERP Systems",
     description: "Custom enterprise solutions that streamline your operations, automate workflows, and provide real-time insights for better decision-making.",
     features: ["Inventory Management", "Financial Tracking", "Custom Workflows"],
   },
   {
     icon: Globe,
+    href: "/website-development-ethiopia",
     title: "Website Development",
     description: "Fast, responsive websites that look professional on every device and are optimized for search engines to help you reach more customers.",
     features: ["Mobile-First Design", "SEO Optimized", "Fast Loading"],
   },
   {
     icon: Smartphone,
+    href: "/mobile-app-development-ethiopia",
     title: "App Development",
     description: "Android and web applications with clean interfaces and secure backends that your customers will love to use.",
     features: ["Clean UI", "Secure Backend", "Cross-Platform"],
@@ -35,7 +38,7 @@ export function ServicesPreview() {
             What We Build
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            We focus on three core services, delivering quality over quantity.
+            Website development, ERP systems and mobile applications for businesses in Addis Ababa and across Ethiopia.
           </p>
         </div>
 
@@ -75,6 +78,9 @@ export function ServicesPreview() {
                   </li>
                 ))}
               </ul>
+              <Button asChild variant="link" className="mt-5 h-auto p-0 justify-start whitespace-normal relative z-10">
+                <Link to={service.href}>Explore {service.title}<ArrowRight className="w-4 h-4" /></Link>
+              </Button>
             </div>
           ))}
         </div>

@@ -11,9 +11,9 @@ const navigation = {
     { name: "Contact", href: "/contact" },
   ],
   services: [
-    { name: "ERP Systems", href: "/services#erp" },
-    { name: "Website Development", href: "/services#websites" },
-    { name: "App Development", href: "/services#apps" },
+    { name: "ERP Systems", href: "/erp-development-ethiopia" },
+    { name: "Website Development", href: "/website-development-ethiopia" },
+    { name: "App Development", href: "/mobile-app-development-ethiopia" },
   ],
 };
 
@@ -40,7 +40,7 @@ export function Footer() {
               <span className="font-semibold text-lg">United Tech</span>
             </Link>
             <p className="text-primary-foreground/70 text-sm leading-relaxed mb-6">
-              Building reliable ERP systems, websites, and apps for growing businesses.
+              A software company in Addis Ababa, building reliable ERP systems, websites and apps for businesses across Ethiopia.
             </p>
             <div className="flex items-center gap-2 text-sm text-primary-foreground/70">
               <MapPin className="w-4 h-4" />
