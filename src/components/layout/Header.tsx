@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import logoAsset from "@/assets/united-tech-logo.webp.asset.json";
+import logo from "@/assets/united-tech-logo.webp";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -23,7 +23,7 @@ export function Header() {
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <img src={logoAsset.url} alt="United Tech" className="w-12 h-12 rounded-lg object-contain" />
+            <img src={logo} alt="United Tech" className="w-12 h-12 rounded-lg object-contain" />
             <span className="font-bold text-xl text-heading">United Tech</span>
           </Link>
 
