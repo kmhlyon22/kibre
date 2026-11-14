@@ -1,48 +1,34 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
-import dashboardVisual from "@/assets/dashboard-visual.webp";
-import { FloatingTechElements } from "@/components/ui/floating-tech-elements";
+import { ArrowRight } from "lucide-react";
+import dashboardVisual from "@/assets/illustrations/connected-erp-hero.webp";
 
 
 export function HeroSection() {
     return (
-        <section className="relative overflow-hidden bg-hero pb-16 lg:pb-24">
-            {/* Background Pattern */}
-
-            {/* Floating Tech Elements */}
-            <FloatingTechElements
-                variant="dense"
-                className="opacity-60 lg:opacity-100"
-            />
-
-            <div className="container mx-auto px-4 lg:px-8 py-20 lg:py-28 relative z-10">
-                <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <section className="home-hero relative overflow-hidden">
+            <div className="container mx-auto px-4 lg:px-8 pt-12 pb-16 lg:pt-16 lg:pb-24 relative z-10">
+                <div className="grid lg:grid-cols-[0.95fr_1.05fr] gap-8 lg:gap-10 items-center">
                     {/* Content */}
                     <div className="text-center lg:text-left">
                         {/* Trust Badge */}
-                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
-                            <CheckCircle2 className="w-4 h-4" />
-                            <span>
-                                Trusted by Ethiopia’s Growing Businesses
-                            </span>
-                        </div>
+                        <p className="text-sm font-semibold text-primary mb-5">Trusted by Ethiopia’s Growing Businesses</p>
 
                         {/* Main Headline */}
-                        <h1 className="text-5xl md:text-6xl font-bold text-heading leading-tight mb-4">
+                        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-heading leading-tight mb-5 text-balance">
                             United Tech{" "}
-                            <span style={{ color: "#8B5A2B" }}>Ethiopia</span>
+                            <span className="hero-earth">Ethiopia</span>
                         </h1>
 
-                        <h2 className="text-2xl md:text-4xl font-bold text-heading leading-snug mb-6">
-                            The best <span className="text-primary">website, mobile app and ERP system</span> developers in Addis Ababa, Ethiopia.
-                        </h2>
+                        <p className="text-xl sm:text-2xl font-semibold text-heading leading-relaxed mb-5 text-balance">
+                            Professional <span className="text-primary">website, mobile app and ERP system</span> development in Addis Ababa, Ethiopia.
+                        </p>
 
                         {/* Subheadline */}
                         <p className="text-base md:text-lg text-muted-foreground max-w-xl mx-auto lg:mx-0 mb-8">
-                            We help Ethiopian businesses automate operations and
-                            build modern digital products that scale with your
-                            growth.
+                            We design and develop tailored digital solutions that streamline
+                            operations, strengthen your online presence, and support lasting
+                            business growth.
                         </p>
 
                         {/* CTAs */}
@@ -65,10 +51,10 @@ export function HeroSection() {
 
                     {/* Visual */}
                     <div>
-                        <img fetchPriority="high" decoding="async"
+                        <img fetchPriority="high" loading="eager" decoding="async" width={1000} height={760}
                             src={dashboardVisual}
-                            alt="Dashboard visualization showing analytics and data management"
-                            className="relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-xl mx-auto mix-blend-multiply"
+                            alt="Connected ERP platform with inventory, analytics, mobile, website and cloud systems"
+                            className="relative w-full max-w-sm sm:max-w-lg lg:max-w-none mx-auto"
                         />
                     </div>
                 </div>
