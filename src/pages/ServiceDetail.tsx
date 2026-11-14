@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { SectionEyebrow } from "@/components/ui/section-eyebrow";
 import { ProjectCard } from "@/components/projects/ProjectCard";
+import { ProjectVideoDialog } from "@/components/projects/ProjectVideoDialog";
 import { serviceDetails, ServiceSlug } from "@/data/service-details";
 import { projects } from "@/data/projects";
 import websiteImage from "@/assets/illustrations/services-hero.webp";
@@ -13,6 +15,7 @@ import appImage from "@/assets/illustrations/projects-hero.webp";
 const images = { websites: websiteImage, erp: erpImage, apps: appImage };
 
 export default function ServiceDetail({ slug }: { slug: ServiceSlug }) {
+  const [selectedProject, setSelectedProject] = useState<(typeof projects)[number] | null>(null);
   const service = serviceDetails[slug];
   const examples = projects.filter(project => (service.projectIds as readonly number[]).includes(project.id));
 
@@ -55,7 +58,7 @@ export default function ServiceDetail({ slug }: { slug: ServiceSlug }) {
           <h2 className="text-3xl font-bold text-heading mb-4">{service.projectHeading}</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mb-10">{service.projectIntro}</p>
           <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
-            {examples.map(project => <ProjectCard key={project.id} project={project} onWatch={() => undefined} />)}
+            {examples.map(project => <ProjectCard key={project.id} project={project} onWatch={setSelectedProject} />)}
           </div>
         </div>
       </section>
@@ -72,6 +75,7 @@ export default function ServiceDetail({ slug }: { slug: ServiceSlug }) {
           </nav>
         </div>
       </section>
+      <ProjectVideoDialog project={selectedProject} onClose={() => setSelectedProject(null)} />
     </Layout>
   );
 }

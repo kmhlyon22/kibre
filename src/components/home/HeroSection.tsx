@@ -26,9 +26,9 @@ export function HeroSection() {
 
                         {/* Subheadline */}
                         <p className="text-base md:text-lg text-muted-foreground max-w-xl mx-auto lg:mx-0 mb-8">
-                            We design and develop tailored digital solutions that streamline
-                            operations, strengthen your online presence, and support lasting
-                            business growth.
+                            We’re a software company in Addis Ababa serving businesses across Ethiopia.
+                            Our tailored digital solutions streamline operations, strengthen your
+                            online presence, and support lasting business growth.
                         </p>
 
                         {/* CTAs */}
