@@ -1,13 +1,17 @@
+import { useState } from "react";
+import { ProjectCard } from "@/components/projects/ProjectCard";
+import { ProjectVideoDialog } from "@/components/projects/ProjectVideoDialog";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { ArrowRight, Globe, Smartphone, ExternalLink } from "lucide-react";
+import { ArrowRight, Globe, Smartphone } from "lucide-react";
 import projectsHeroImage from "@/assets/illustrations/projects-hero.webp";
 import { FloatingTechElements } from "@/components/ui/floating-tech-elements";
 // Import project thumbnails
 import { projects } from "@/data/projects";
 
 export default function Projects() {
+  const [selectedProject, setSelectedProject] = useState<(typeof projects)[number] | null>(null);
   const isApp = (c: string) => /SaaS|ERP|Platform/i.test(c);
   const websiteCount = projects.filter(p => !isApp(p.category)).length;
   const appCount = projects.filter(p => isApp(p.category)).length;
@@ -58,45 +62,9 @@ export default function Projects() {
       {/* Projects Grid */}
       <section className="py-20 lg:py-28 bg-background">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project, index) => (
-              <div
-                key={project.id}
-                className={`group bg-card rounded-2xl overflow-hidden border border-border/50 card-hover opacity-0 animate-slide-up relative`}
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                {/* Image */}
-                <div className="aspect-video bg-secondary relative overflow-hidden">
-                  <img loading="lazy" decoding="async" 
-                    src={project.thumbnail} 
-                    alt={project.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute top-4 left-4 flex gap-2">
-                    <span className="px-3 py-1 bg-primary/90 text-primary-foreground text-xs font-medium rounded-full">
-                      {project.category}
-                    </span>
-                  </div>
-                </div>
-
-                {/* Content */}
-                <div className="p-6 relative">
-                  {/* Tech Network Background */}
-                  
-                  <h3 className="text-xl font-semibold text-heading mb-2 group-hover:text-primary transition-colors relative z-10">
-                    {project.title}
-                  </h3>
-                  <p className="text-muted-foreground text-sm mb-4 relative z-10">
-                    {project.description}
-                  </p>
-
-                  {project.link && (
-                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="relative z-10 inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline">
-                      Visit live site <ExternalLink className="w-4 h-4" />
-                    </a>
-                  )}
-                </div>
-              </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+            {projects.map((project) => (
+              <ProjectCard key={project.id} project={project} onWatch={setSelectedProject} />
             ))}
           </div>
         </div>
@@ -122,6 +90,7 @@ export default function Projects() {
           </div>
         </div>
       </section>
+      <ProjectVideoDialog project={selectedProject} onClose={() => setSelectedProject(null)} />
     </Layout>
   );
 }
