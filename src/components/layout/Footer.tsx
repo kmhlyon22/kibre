@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, MessageCircle, MapPin } from "lucide-react";
-import logo from "@/assets/united-tech-logo.jpg";
+import logo from "@/assets/united-tech-logo.webp";
 import worldMap from "@/assets/illustrations/world-map-golden.webp";
 
 const navigation = {
