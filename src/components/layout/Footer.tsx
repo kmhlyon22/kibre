@@ -19,8 +19,19 @@ const navigation = {
 
 export function Footer() {
   return (
-    <footer className="bg-navy text-primary-foreground">
-      <div className="container mx-auto px-4 lg:px-8 py-16">
+    <footer className="relative overflow-hidden bg-navy text-primary-foreground">
+      {/* Golden world map background */}
+      <div className="pointer-events-none absolute inset-0 flex items-center justify-center" aria-hidden="true">
+        <img
+          src={worldMap}
+          alt=""
+          loading="lazy"
+          width={1920}
+          height={1024}
+          className="w-full max-w-5xl object-contain opacity-25"
+        />
+      </div>
+      <div className="relative container mx-auto px-4 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
